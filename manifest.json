@@ -1,0 +1,18 @@
+{
+  "name": "DrD2 Pomocník",
+  "short_name": "DrD2",
+  "description": "Průvodce hrdiny pro hru Dračí Doupě 2",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0c0a09",
+  "theme_color": "#1c1917",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3408/3408545.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

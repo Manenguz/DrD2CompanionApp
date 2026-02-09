@@ -1,6 +1,6 @@
 {
-  "name": "DraciDoupe2CompanionApp",
-  "description": "DraciDoupe2CompanionApp",
+  "name": "Dračí Doupě 2 Companion",
+  "description": "Offline-ready PWA companion for tracking DrD2 character stats, abilities, and dice rolls.",
   "requestFramePermissions": [
     "camera"
   ]
