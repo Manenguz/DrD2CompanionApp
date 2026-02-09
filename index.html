@@ -24,22 +24,15 @@
       color: #e5e5e5;
       -webkit-tap-highlight-color: transparent;
       user-select: none;
-      /* Safe areas for notched phones */
       padding-top: env(safe-area-inset-top);
       padding-bottom: env(safe-area-inset-bottom);
     }
     .fantasy-title {
       font-family: 'Cinzel', serif;
     }
-    .parchment {
-      background-color: #f4ecd8;
-      color: #2d241e;
-      border: 2px solid #8b7355;
-    }
     .scrollbar-hide::-webkit-scrollbar {
       display: none;
     }
-    /* Simple fade animation for tab transitions */
     .animate-fade-in {
       animation: fadeIn 0.3s ease-out;
     }
@@ -51,10 +44,10 @@
 <script type="importmap">
 {
   "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
     "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
+    "vite": "https://esm.sh/vite@^7.3.1"
   }
 }
 </script>
@@ -62,16 +55,17 @@
 </head>
 <body>
   <div id="root"></div>
-  <script type="module" src="index.tsx"></script>
+  <!-- Vite will handle the transpilation of index.tsx -->
+  <script type="module" src="/index.tsx"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js')
+        // Use relative path for service worker
+        navigator.serviceWorker.register('./sw.js', { scope: './' })
           .then(reg => console.log('SW Registered', reg))
-          .catch(err => console.log('SW failed', err));
+          .catch(err => console.error('SW registration failed:', err));
       });
     }
   </script>
-<script type="module" src="/index.tsx"></script>
 </body>
 </html>

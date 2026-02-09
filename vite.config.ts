@@ -1,23 +1,19 @@
-import path from 'path';
-import { defineConfig, loadEnv } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
 
-export default defineConfig(({ mode }) => {
-    const env = loadEnv(mode, '.', '');
-    return {
-      server: {
-        port: 3000,
-        host: '0.0.0.0',
+export default defineConfig({
+  // Use relative paths so the app works in subfolders like /repo-name/
+  base: './',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    // Ensure the service worker and manifest are copied correctly
+    rollupOptions: {
+      input: {
+        main: './index.html',
       },
-      plugins: [react()],
-      define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-      },
-      resolve: {
-        alias: {
-          '@': path.resolve(__dirname, '.'),
-        }
-      }
-    };
+    },
+  },
+  server: {
+    port: 3000,
+  }
 });
