@@ -1,0 +1,553 @@
+class,Bojovník
+name,Letící zbraň
+flavor,"Kdo si myslí, že se obouručákem nedá zabít na dálku, bude nepříjemně překvapen."
+description,"Postava s touto vyhrazenou dovedností dokáže ja koukoliv zbraň pro boj zblízka použít jako vrhací zbraň, takže může využít zdarma manévr lstivě jako u kterékoliv běžné vrhací zbraně. (aktivace: 1 Tělo)"
+name,Cit pro zbraň (rychlá volba: Úroveň 3)
+flavor,"Ten chlap to s tesákem umí, a nemám na mysli jen porcování masa, jestli mi rozumíte."
+description,"Hráč si vybere jeden druh zbraně pro boj zblízka (např. kopí nebo meč). Postava má nadání (2 manévry) pro pěší i jízdní boj s tímto druhem zbraně proti jakémukoliv protivníkovi a pro zručnost s tímto druhem zbraně. (bez aktivace, Tělo)"
+name,Gladiátor (rychlá volba: Úroveň 1)
+flavor,"Vybojoval už tolik duelů s lidmi i zvířaty, že přesně ví, jak se jim dostat na kobylku."
+description,"Postava je zběhlá (některé manévry zdarma) v pěším boji zblízka jakoukoliv zbraní (i nouzovou) proti zvířatům nebo lidem. (bez aktivace, Tělo)"
+name,Zápasník
+flavor,"Zná tajné údery a chvaty, které lámou kosti a drtí klouby."
+description,"Postava je zběhlá (některé manévry zdarma) v pěším boji zblízka beze zbraně proti zvířatům nebo lidem, tuto schopnost může uplatnit i proti soupeři ozbrojenému zbraní. (bez aktivace, Tělo)"
+name,Silák
+flavor,Dokáže vyvrátit okované dveře z pantů nebo vyrvat menší strom ze země i s kořeny.
+description,"Postava je zběhlá (některé manévry zdarma) v činnostech vyžadujících pouze hrubou sílu (např. zvedání a odvalování břemen nebo vyrážení dveří). Dále může postava bojovat dvouručními zbraněmi a držet je při tom jen v jedné ruce. (bez aktivace, Tělo)"
+name,Šampión (rychlá volba: Úroveň 5)
+flavor,"Jeho slova a chování dokážou zdrtit soupeře dřív, než začne samotný boj."
+description,"Postava je zběhlá (některé manévry zdarma) v chvástání, ostouzení soupeřů a zastrašování lidí. (bez aktivace, Vliv)"
+name,Bojové reflexy (rychlá volba: Úroveň 4)
+flavor,Jeho rychlost je nelidská. V jediném okamžiku může napadnout dva soupeře.
+description,"Při boji zblízka může postava při každém svém tělesném útoku směřovaném pouze na dva cíle použít zdarma manévr rozsáhle. (bez aktivace, Tělo)"
+name,Osobní strážce
+flavor,Svého zákazníka nebo přítele dostane živého a zdravého z jakéhokoliv nebezpečí.
+description,"Tělesnými akcemi může reagovat pomocí manévru obrana nejen na akce vedené na sebe, jak je obvyklé, ale i na jakékoliv akce vedené na jinou postavu, která se nachází poblíž. (bez aktivace, Tělo)"
+name,Rameno na rameno (rychlá volba: Úroveň 2)
+flavor,Věrnému spolubojovníkovi dokáže pomoci v útoku i krýt záda.
+description,"Postava může zaplatit svými zdroji za svého pomocníka nebo jinou postavu, která se nachází dostatečně blízko a čelí nepřátelům v boji zblízka. (bez aktivace, Duše)"
+name,Hlava nehlava
+flavor,V zápalu boje dokáže rozbít soupeři o hlavu takřka cokoliv.
+description,"Postava může při boji zblízka udělit jizvu jakémukoliv předmětu, který použije jako nouzovou zbraň. Předmět tak zničí a získá tím 1 zdroj jako při zničení zbraně běžné kvality. (bez aktivace, Tělo)"
+name,Pádný úder
+flavor,Ranou své zbraně dokáže prorazit i pevnou zbroj nebo rozdrtit přilbu.
+description,"Proti jeho útokům se zbraní poskytuje zbroj o 1 menší slevu. (bez aktivace, Tělo) Přečtení soupeře Pozná, co může od svého protivníka čekat, a to ještě dřív, než se s ním střetne. Hráč může stanovit, že budoucí soupeř jeho postavy má při boji zblízka určitou slabinu nebo nějakou oblíbenou taktiku, kterou ve střetu s jeho postavou využije. (aktivace: 1 Vliv)"
+class,Lovec
+name,Jedno oko otevřené
+flavor,"Je ostražitý a vnímá, co se kolem děje, i když odpočívá nebo spí."
+description,"Postava s touto vyhrazenou dovedností dokáže i během spánku reagovat na jakoukoliv akci přímo ohrožující ji nebo jiného člena družiny, jako by nespala, pokud někdo nepoužije k jejímu uspání omamné látky či magii. Postava se tedy při úspěšném použití této dovednosti včas probudí a zareaguje na nebezpečí – hráč si může hodit na iniciativu. (aktivace: 1 Duše)"
+name,Vetřelci (rychlá volba: Úroveň 5)
+flavor,"Vycítí na dálku cizí tvory, pro něž není divočina domovem. "
+description,"Postava s touto vyhrazenou dovedností dokáže v divočině určit, kterým směrem se do vzdálenosti asi jedné hodiny chůze nacházejí tvorové, již zde nejsou doma. (aktivace: 1 Duše)"
+name,Něco z ničeho (rychlá volba: Úroveň 2)
+flavor,"Nepotřebuje železa ani oka z drátů, k vytvoření smrtící léčky mu stačí kus provazu a nůž."
+description,Postava s touto vyhrazenou dovedností dokáže i bez vynaložení koupených surovin vytvářet lovecké pasti se silou až do výše své Duše. (aktivace: 1 Duše)
+name,Dobrá muška (rychlá volba: Úroveň 3)
+flavor,"Se svou oblíbenou zbraní dokáže zasáhnout hned první ranou, jako by cíl jeho střelu přímo přitahoval."
+description,"Hráč si vybere jeden druh střelné zbraně (např. luk). Postava má nadání (2 manévry) pro pěší i jízdní střelbu tímto druhem zbraně na jakýkoliv cíl. (bez aktivace, Tělo)"
+name,Lučištník (rychlá volba: Úroveň 1)
+flavor,"Před jeho střelami není úniku. Najde si svou kořist v jakémkoliv úkrytu a ví, jak šípem spolehlivě zmrzačit zvíře nebo člověka"
+description,"Postava je zběhlá (některé manévry zdarma) v pěší střelbě jakoukoliv střelnou zbraní na lidi, zvířata a neživé cíle. (bez aktivace, Tělo)"
+name,Průzkumník
+flavor,V přírodním terénu se pohybuje tiše jako duch a jeho bystrému zraku nic neunikne.
+description,"Postava je zběhlá (některé manévry zdarma) v tichém pohybu, skrývání se a odhalování skrytých tvorů či věcí v divočině. (bez aktivace, Duše)"
+name,Zálesák
+flavor,"V divočině je jako doma, neztratí směr ani netrpí hladem."
+description,"Voda je jeho živel a řeky jsou pro něj cestami spolehlivě vedoucími k cíli. Postava je zběhlá (některé manévry zdarma) v hledání cesty, potravy a přístřeší v divočině, v lovu zvířat, rybolovu a vytváření loveckých pastí, ve zpracování a prodeji kořisti, v činnostech vyžadujících otužilost a v plavání i plavbě malým plavidlem. (bez aktivace, Duše)"
+name,Stopař
+flavor,"Kde jiní vidí pouze brázdu ve sněhu, on dokáže rozpoznat stopy pěti mužů, kteří odnášeli hledanou ženu směrem na sever."
+description,"Postava je zběhlá (některé manévry zdarma) v stopování a zakrývání stop. (bez aktivace, Duše)"
+name,Krotitel
+flavor,I to nejvzpurnější zvíře zjihne pod jeho přísným pohledem či výhružným zamručením.
+description,"Postava je zběhlá (některé manévry zdarma) v ochočování si zvířat, využívání zvířat pomocí povelů a v zastrašování zvířat. (bez aktivace, Vliv)"
+name,Zdvojená střela (rychlá volba: Úroveň 4)
+flavor,První šíp ještě sviští vzduchem a zkušená ruka již zakládá na tětivu druhý.
+description,"Při střelbě, během níž má postava dostatek dobře přístupné munice (například šípy zabodané před sebou v zemi), může postava při každém svém útoku směřovaném pouze na dva cíle použít zdarma manévr rozsáhle. (bez aktivace, Tělo)"
+name,K neutahání
+flavor,Stačí mu trochu si zdřímnout a je zase čilý jako rybička.
+description,"Při nedostatečném odpočinku si postava doplní 2 vyčerpané zdroje navíc. (bez aktivace, Duše)"
+name,Jedna duše
+flavor,"Dokáže si své zvíře vycvičit tak, že na sebe cizího člověka nenechá ani sáhnout."
+description,"Hráč může určit, jak bude reagovat ochočené zvíře jeho postavy na tvora, který se s ním právě pokouší navázat kontakt (například pes může odmítnout nabízený pamlsek i v nepřítomnosti svého pána, kůň může na zahvízdnutí shodit jezdce, který se na něm pokouší ujet). To platí, pokud není zvíře očarováno. (aktivace: 1 Vliv)"
+class,Kejklíř
+name,Změna tváře (rychlá volba: Úroveň 5)
+flavor,"Nepotřebuje převleky ani líčidla. Prostě jen svraští obličej, rozcuchá si vlasy, shrbí se nebo napodobí záškuby šílence tak dovedně, že jej ani přátelé nepoznají."
+description,"Postava s touto vyhrazenou dovedností se dokáže vydávat za někoho jiného (například za stařenu nebo žebráka), ačkoliv neměla dost času nebo prostředky k tomu, aby se nalíčila nebo použila převlek. Nemůže se však tímto způsobem vydávat za nějakou určitou existující osobu. (aktivace: 1 Tělo)"
+name,Děsivá přesnost (rychlá volba: Úroveň 3)
+flavor,"Pokud se jím vržená zbraň chvěje v trámu vedle vaší hlavy, buďte si jistí, že neminul. Bylo to varování."
+description,"Hráč si vybere jeden druh vrhací zbraně (např. nůž nebo oštěp). Postava má nadání (2 manévry) pro pěší i jízdní vrhání tímto druhem zbraně na jakýkoliv cíl. (bez aktivace, Tělo)"
+name,Rychlé ruce
+flavor,"Zbraň či glejt, o který jej chce někdo připravit, mění místa tak rychle, že to skoro nelze postřehnout."
+description,"Postava má nadání (2 manévry) čelit tomu, když ji někdo chce připravit o předmět, který drží v rukou. (bez aktivace, Tělo)"
+name,Vrhač (rychlá volba: Úroveň 1)
+flavor,"Zabíjel na dálku už tolikrát, že předvídá každý pohyb i úmysl své kořisti."
+description,"Postava je zběhlá (některé manévry zdarma) v pěším vrhání jakoukoliv vrhací zbraní na lidi, zvířata a neživé cíle. (bez aktivace, Tělo)"
+name,Akrobat (rychlá volba: Úroveň 2)
+flavor,Je skvělý jezdec i běžec a jeho přemety či skoky ze střechy na střechu vyrážejí přihlížejícím dech.
+description,"Postava je zběhlá (některé manévry zdarma) ve skocích a pádech, v běhu, jezdectví a jezdecké akrobacii. (bez aktivace, Tělo)"
+name,Provazochodec
+flavor,Po provaze běhá jako veverka a svým lehkým krokem dokáže bez jediného zaskřípání překonat i rozvrzanou prkennou podlahu.
+description,"Postava je zběhlá (některé manévry zdarma) v udržování rovnováhy a v tichém pohybu ve městě. (bez aktivace, Tělo)"
+name,Hadí muž
+flavor,Ten člověk má snad ohebné i kosti a dokáže lézt po zdi jako moucha.
+description,"Postava je zběhlá (některé manévry zdarma) ve šplhání a lezení, protahování se úzkými otvory a vykroucení se z pout. (bez aktivace, Tělo)"
+name,Zloděj
+flavor,Vyhodit kotvičku na hradební zeď je pro něj stejně snadné jako odříznout něčí váček nebo vytáhnout eso z rukávu.
+description,"Postava je zběhlá (některé manévry zdarma) ve vrhání na neživý cíl, žonglování, tricích s drobnými předměty, okrádání druhých a v ukrývání věcí na těle. (bez aktivace, Tělo)"
+name,Špeh
+flavor,"Přesně ví, kde je možné se ve městě či na vsi schovat a kde naopak hledat to, co mělo uniknout jeho zvědavému zraku."
+description,"Postava je zběhlá (některé manévry zdarma) v ukrývání se a odhalování skrytých tvorů či věcí ve městě a v orientaci ve městě. (bez aktivace, Duše)"
+name,Komediant
+flavor,"Když mluví, může mu za zády přecházet karavana velbloudů a nikdo si jí ani nevšimne."
+description,"Postava je zběhlá (některé manévry zdarma) v předstírání a herectví, v přestrojování se a v uměleckých kouscích. (bez aktivace, Vliv)."
+name,Dvě mouchy jednou ranou (rychlá volba: Úroveň 4)
+flavor,V jediné chvíli vrhne každou rukou jeden nůž či kámen.
+description,"Při vrhání, během nějž má postava dostatek dobře přístupné munice (například vrhací nože v pouzdrech na předloktích nebo kameny na zemi před sebou), může postava při každém svém útoku směřovaném pouze na dva cíle použít zdarma manévr rozsáhle. (bez aktivace, Tělo)"
+name,Skrytá kapsa
+flavor,"Nikdo neví, jak to dělá, ale nějakou tu drobnost je schopen pronést kamkoliv."
+description,"Hráč může určit, že jeho postava má u sebe jeden malý předmět do velikosti dlaně, a to i poté, co byla prohledána. Pokud by se však mělo jednat o předmět cenný (například prsten s drahokamem), musela jej postava dříve koupit. (aktivace: 1 Tělo)"
+class,Mastičkář
+name,Čtení v duši
+flavor,Vidí člověku až do žaludku a dokáže odhadnout jeho pravou povahu i schopnosti. 
+description,Postava s touto vyhrazenou dovedností dokáže společně s odhadem jedné z hranic určitého člověka zároveň zjistit i výši nebo obsah jeho charakteristiky. (aktivace: 1 Vliv)
+name,Umění improvizace (rychlá volba: Úroveň 3)
+flavor,"Zatímco jiní zkoušejí chybějící přísadu nějak nahradit, on si zkrátka upraví celý recept. "
+description,"Postava s touto vyhrazenou dovedností dokáže vyrobit jakoukoliv substanci z nouzových surovin, aniž by výrobek ztratil s východem nebo západem slunce své vlastnosti. Stále však platí omezení, že substance nemůže mít větší sílu než 1. (aktivace: 1 Duše)"
+name,Všelék
+flavor,"Sbírá babské recepty, studuje staré lékařské spisy a díky tomu dokáže namíchat léčivý životabudič, který zabírá prakticky na cokoliv."
+description,"Postava s touto vyhrazenou dovedností dokáže vyrobit lektvar, který nemá omezený účel, ale hojí jakýkoliv druh tělesných jizev – od zranění až po nemoc. (aktivace: 1 surovina)"
+name,Neobvyklé jedy (rychlá volba: Úroveň 5)
+flavor,"Míchá jedy, jako by tvořil umělecké dílo – tu něco přidá, tam něco změní a výsledek je ohromující. "
+description,"Postava s touto vyhrazenou dovedností dokáže vyrobit rychlý jed nebo omamnou látku, které účinkují okamžitě. (aktivace: 1 surovina) Postava také dokáže vyrobit dvousložkový jed nebo omamnou látku, které zůstanou v těle oběti a začnou působit teprve v okamžiku, kdy oběť pozře něco, co jed aktivuje. Jed či omamná látka zůstanou v těle oběti nejpozději do nejbližšího slunovratu nebo rovnodennosti. (aktivace: 1 surovina) Postava rovněž dokáže vyrobit těžko odhalitelný jed či omamnou látku, které nemají výraznou chuť, vůni ani barvu. (aktivace: 1 surovina)"
+name,Ranhojič
+flavor,"Kde běžný felčar dokáže tak nanejvýš pustit žilou pacientovi i jeho měšci, on zachraňuje životy."
+description,"Postava je zběhlá (některé manévry zdarma) v léčení lidského těla, v lučbě a v přípravě a podávání lektvarů. (bez aktivace, Duše)"
+name,Travič
+flavor,"Jedy a uspávadla, které vyrábí, účinkují spolehlivěji než ostrá dýka nebo rána do zátylku."
+description,"Postava je zběhlá (některé manévry zdarma) v přípravě a maskování jedů a uspávadel a v mastičkářských znalostech. (bez aktivace, Duše)"
+name,Vyjednavač (rychlá volba: Úroveň 4)
+flavor,"Ví, co a kdy je třeba říci, aby se rozhovor ubíral tím správným směrem. "
+description,"Postava je zběhlá (některé manévry zdarma) v odhadování hranic, pocitů a úmyslů lidí a ve vyjednávání a smlouvání s lidmi. (bez aktivace, Vliv)"
+name,Ostrý jazyk (rychlá volba: Úroveň 1)
+flavor,Umí se zastat svých přátel a jeho slova tnou hlouběji než meč.
+description,"Akcemi spadajícími pod Vliv může reagovat pomocí manévru obrana nejen na akce vedené na sebe, jak je obvyklé, ale i na jakékoliv akce vedené na jinou postavu, která se nachází v doslechu. (bez aktivace, Vliv)"
+name,Moudrý rádce (rychlá volba: Úroveň 2)
+flavor,Pouhá jeho přítomnost může jeho přátelům pomoci odolat nátlaku nebo přesvědčit o své pravdě odpůrce. 
+description,"Postava může zaplatit svými zdroji za svého pomocníka nebo jinou postavu, která se nachází dostatečně blízko a čelí přesvědčování, smlouvání nebo ovlivňování. (bez aktivace, Vliv)"
+name,Samaritán
+flavor,Už pouhá jeho přítomnost u lůžka zraněného či nemocného dodává naději i víru v uzdravení.
+description,"Při léčení tělesné jizvy může postava zčásti nebo zcela zaplatit svými zdroji Vlivu za hojení pacienta. (bez aktivace, Vliv)"
+name,Pečovatelský zásah
+flavor,"Masáž bolavých zad, pečlivé převázání ran nebo podání povzbuzujícího nápoje dokážou spolubojovníkovi doplnit ztracené síly."
+description,"Když se někomu přiměřeně dlouho věnuje, může mu předat libovolné množství svých tělesných zdrojů. (bez aktivace, Tělo)"
+name,Lazebník
+flavor,Holení a stříhání vlasů jsou jen záminkou k tomu si poklábosit a vyměnit novinky. 
+description,"Hráč může stanovit, že o určité postavě koluje mezi lidmi nějaká fáme nebo pomluva. (aktivace: 1 Vliv)"
+class,Zaříkávač
+name,Čarovné stráže
+flavor,"Z prastarých knih vyčetl návody na ochranné rituály, jaké zná jen málokterý kouzelník."
+description,"Postava s touto vyhrazenou dovedností dokáže při provádění magických obrazců vytvořit chytrého strážce, kterému lze uložit podmínku, při jejímž splnění nemá procitnout – například pokud se předmětu dotkne určitá osoba nebo pokud někdo při vstupu do kruhu vyřkne stanovené heslo. (aktivace: 1 Duše) Postava také dokáže vytvořit „věčného“ strážce, který je spoutaný s místem či předmětem až do nejbližšího slunovratu nebo rovnodennosti. (aktivace: 3 Duše)"
+name,Modlitby a uřknutí (rychlá volba: Úroveň 5)
+flavor,"Umí zajistit přízeň nebes, ale také potrestat provinilce tak, že bude na kolenou prosit, aby z něj trest sňal."
+description,"Postava s touto vyhrazenou dovedností dokáže seslat silné zaříkání (požehnání nebo prokletí), které ovlivní určitou činnost cíle až do nejbližšího východu nebo západu slunce. (aktivace: 1 Vliv) Postava také dokáže seslat silné prokletí (nikoliv však silné požehnání) v podobě „věčné“ kletby, jejíž účinky přetrvají až do nejbližšího slunovratu nebo rovnodennosti, musí však obsahovat splnitelnou podmínku, při jejímž naplnění vyprchá, například „dokud nepohostíš neznámého pocestného“. (aktivace: 3 Vlivy)"
+name,Knihomol
+flavor,"Zná staré legendy, luští texty v téměř zapomenutých jazycích, rozpozná jakékoliv kouzlo a jeho znalosti ho neomylně přivádějí ke zřídlům čarovné moci "
+description,"Postava je zběhlá (některé manévry zdarma) v učenosti. (bez aktivace, Duše)"
+name,Zasvěcenec
+flavor,Přináší útěchu i rozhřešení a jeho víra v božstva či v sebe sama dodává moc i jeho modle či magickému amuletu.
+description,"Postava je zběhlá (některé manévry zdarma) v rozpoznávání duševních chorob, léčení duševních jizev a v ukládání zdrojů do rituálních předmětů. (bez aktivace, Duše)"
+name,Divoký talent (rychlá volba: Úroveň 1)
+flavor,Síla jeho nadání je udivující. Lidé touží po jeho požehnání a obávají se jeho kleteb.
+description,"Postava je zběhlá (některé manévry zdarma) v sesílání prokletí a požehnání. (bez aktivace, Vliv)"
+name,Povolávač 
+flavor,"Ví přesně, jak přivolat nadpřirozenou bytost, ochránit se před její zlobou a jak spoutat tajemné magické síly."
+description,"Postava je zběhlá (některé manévry zdarma) v jednání s nadpřirozenými bytostmi, včetně jejich přilákání, a ve vytváření magických obrazců. (bez aktivace, Vliv)"
+name,Bystrost (rychlá volba: Úroveň 4)
+flavor,Je pohotový a v pravou chvíli dokáže pomoci příteli radou či kouzlem.
+description,"Duševními akcemi může reagovat pomocí manévru obrana nejen na akce vedené na sebe, jak je obvyklé, ale i na jakékoliv akce vedené na jinou postavu, která se nachází v dohledu. (bez aktivace, Duše)"
+name,Spojení myslí (rychlá volba: Úroveň 2)
+flavor,"Dokud má dost sil, ochrání věrného spolubojovníka před cizími čáry a kouzly."
+description,"Postava může zaplatit svými zdroji za svého pomocníka nebo jinou postavu, která se nachází dostatečně blízko a čelí jakékoliv formě magie. (bez aktivace, Duše)"
+name,Síla osobnosti
+flavor,Jeho klid konejší a jeho moudrost zahání výčitky svědomí i noční můry.
+description,"Při léčení duševní jizvy může postava zčásti nebo zcela zaplatit svými zdroji vlivu za hojení pacienta. (bez aktivace, Vliv)"
+name,Mystický kruh
+flavor,Mocným obřadem či rituálem mohou zaříkávači spojit své síly a dosáhnout zázraku.
+description,"Postava může přispět svými zdroji jiné postavě, která provádí nějaký druh magie, pokud předtím provedly obě postavy dostatečně dlouhou obřadní přípravu. (bez aktivace, Vliv)"
+name,Moc amuletu (rychlá volba: Úroveň 3)
+flavor,"Kde jiní rozhazují zlatý prach a pálí vonné svíce, aby obnovili moc své hole či odznaku víry, on jen zašeptá prosbu a je vyslyšen."
+description,"Postava s touto vyhrazenou dovedností dokáže ukládat zdroje do rituálního předmětu bez vynaložení surovin. (bez aktivace, Duše)"
+name,Věže a chrámy
+flavor,"Ať se nachází kdekoliv, dokáže pro své přátele najít ochranu za zdmi kláštera nebo ve věži cechu čarodějů."
+description,"Hráč může stanovit, že se v blízkém okolí nachází chrám, klášter nebo sídlo kouzelnického spolku, a určit jeho polohu. (aktivace: 1 Vliv)"
+class,Válečník
+name,Bojový výcvik
+flavor,"Zjizvení žoldáci v jeho službách často vzpomínají, jaké bývali padavky, než je vzal k sobě do učení."
+description,"Postava s touto vyhrazenou dovedností dokáže za stejnou cenu, jakou by ji stálo posílení Pouta o jeden bod, naučit svého pomocníka jednu bojovnickou dovednost nebo jednu bojovnickou zvláštní schopnost, kterou sama má či ovládá. Součet všech takto přidaných dovedností a zvláštních schopností nemůže přesáhnout hranici Vlivu postavy. (aktivace: 1 Vliv)"
+name,Bohatýr
+flavor,"Na svém hřebci rozráží řady nepřátel, jako když příď lodi krájí příboj."
+description,"Postava je zběhlá (některé manévry zdarma) a zároveň je mistrem (posílené manévry) v jízdním boji zblízka proti lidem a zvířatům. (bez aktivace, Tělo)"
+name,Šermíř
+flavor,"Ovládá všemožné triky, záludnosti a finty, takže souboje jsou jeho druhá přirozenost."
+description,"Postava je mistrem (posílené manévry) v pěším boji zblízka jakoukoliv zbraní (i nouzovou) proti lidem a zvířatům. (bez aktivace, Tělo)"
+name,Veterán
+flavor,"Přesně ví, odkud hrozí v bitvě nebezpečí, a když je po boji, opraví své zbraně stejně dobře jako zkušený zbrojíř."
+description,"Postava je mistrem (posílené manévry) ve strategii a v odhadu nepřítele a je zběhlá (některé manévry zdarma) v opravách zbraní. (bez aktivace, Duše)"
+name,Urozený
+flavor,Jeho původ či výchova a znalosti diplomatického jednání mu otevírají každé dveře.
+description,"Postava je mistrem (posílené manévry) ve využívání svého vlivu ve vyšší společnosti a v uplatňování základů diplomacie. (bez aktivace, Duše)."
+name,Velitel
+flavor,"Aby splnili jím vydaný rozkaz, jsou jeho lidé ochotni položit i život."
+description,"Postava je mistrem (posílené manévry) ve vedení lidí v boji. (bez aktivace, Vliv)"
+name,Válečný oř
+flavor,"Když se řítí vpřed pevně zapřený v sedle, rozdrtí bojovným pokřikem odvahu všech, kdo mu stojí v cestě."
+description,"Sedí-li na jízdním zvířeti, může postava při zastrašování lidí a zvířat použít při každé své akci zdarma manévr rozsáhle. (bez aktivace, Vliv)"
+name,Válečný tanečník
+flavor,"Nepřehlednou skrumáží, kde zní třesk zbraní a sténání raněných, se proplétá mrštně jako kočka."
+description,"Když postava čelí v boji zblízka více než jednomu tvorovi, může v každém kole konfliktu použít jednou zdarma manévr obrana. (bez aktivace, Tělo)"
+name,Hrdinský duch
+flavor,Odhodlání bojovníků pod jeho velením nedokáže zlomit ani přesila nebo děs z nestvůr.
+description,"Postava může zaplatit svými zdroji za svého pomocníka nebo jinou postavu, která se nachází dostatečně blízko a čelí zastrašování či psychickému nátlaku. (bez aktivace, Vliv)"
+name,Vůdcovské charisma
+flavor,"Loajalita jeho následovníků nezná hranic. Milují ho stejnouměrou, jako se ho obávají."
+description,"Z každé jizvy na Poutu získává jakýkoliv pomocník postavy vždy 1 zdroj navíc. (bez aktivace, Vliv)"
+name,Popularita
+flavor,"Mezi svými lidmi má skvělou pověst. Zkuste jejich pánovi vyhrožovat nebo jej očernit a uvidíte, jaké najde zastání."
+description,"Na akce vedené proti postavě a spadající pod Vliv může její pomocník reagovat i pomocí manévru obrana, jestliže se nachází poblíž. (bez aktivace, Vliv)"
+name,Slavné jméno
+flavor,Válečníkovy činy jsou známé v širém okolí a lidé si o nich šeptají.
+description,"Při setkání či konfliktu s cizí postavou může hráč určit, že tato cizí postava zná činy jeho postavy z vyprávění, a popíše, o jaké činy jde. (aktivace: 1 Vliv)"
+class,Hraničář
+name,Poutník
+flavor,Postava rychle pochytí základy většiny jazyků a zbytek odgestikuluje.
+description,"Postava s touto vyhrazenou dovedností dokáže zhruba odhadnout, co jí lidé říkají cizím jazykem, a sdělit jim jednoduché myšlenky, byť se jejich jazyk nikdy neučila. (aktivace: 1 Duše)"
+name,Dravčí instinkty
+flavor,"Snad je to dar od bohů k ochraně lidí, že vnímá nestvůry jakýmsi vnitřním zrakem."
+description,"Postava s touto vyhrazenou dovedností dokáže vnímat netvory, i když je nevidí ani neslyší. Může tedy vycítit přítomnost netvora šestým smyslem a dokáže se s ním bez omezení střetnout i ve tmě nebo v jiných situacích, kdy nemůže používat běžné smysly. (bez aktivace, Duše)"
+name,Berserk
+flavor,V zoufalé situaci jej posedne válečné šílenství a vrhá se strašlivou silou do největšího nebezpečí.
+description,"Postava dokáže za zdroje z tělesné jizvy úrovně 1 dosáhnout úspěchu ve zkoušce nebo zabránit neúspěchu ve střetu bez ohledu na velikost svého Ohrožení. (bez aktivace, Tělo)"
+name,Drakobijce
+flavor,"S netvory se potýkal už tolikrát, že přesně ví, jak na ně."
+description,"Postava je mistrem (posílené manévry) v pěším boji zblízka s netvory a v braní a prodeji trofejí z netvorů. (bez aktivace, Tělo)"
+name,Čarostřelec
+flavor,"Ví, kam umístit střelu z luku či kuše, aby nestvůře pronikla hluboko do těla."
+description,"Postava je mistrem (posílené manévry) v pěší střelbě na netvory a v braní a prodeji trofejí z netvorů. (bez aktivace, Tělo)"
+name,Strážce hranic
+flavor,Je ochráncem i hrází proti nebezpečí přicházejícímu z divočiny.
+description,"Postava je zběhlá (některé manévry zdarma) ve vytváření loveckých pastí na lidi a při výrobě primitivních zbraní a nástrojů, jednoduchých obranných staveb a malých plavidel. (bez aktivace, Duše)"
+name,Slavný stvůrobijce
+flavor,Každý už slyšel o jeho činech a na netvory jeho pověst a zjev působí děsivě.
+description,"Postava je mistrem (posílené manévry) v zastrašování netvorů, odhadování jejich zvláštních schopností a v získávání důvěry či přízně obyčejných obyvatel. (bez aktivace, Vliv)"
+name,Divý muž
+flavor,Je mimořádně zkušený v provádění lesních přepadů a útoků ze zálohy.
+description,"Postava je mistrem (posílené manévry) v akcích směřujících k překvapivému přepadení nepřátel v divočině. (bez aktivace, Duše)"
+name,Hrr na ně!
+flavor,Pod jeho nožem padnou během jediné chvíle hned dva strážci a svými léčkami dokáže zpomalit postup celého skřetího oddílu.
+description,"Při líčení loveckých pastí (na libovolný počet cílů) a při plížení se a útočení ze zálohy v divočině směřovaném pouze na dva cíle může postava při každé své akci použít zdarma manévr rozsáhle. (bez aktivace, Duše)"
+name,Lovec trofejí
+flavor,Každá šelma i netvor mají své slabé místo a zkušený lovec skalpů je dobře zná.
+description,"Když postava vstupuje do konfliktu s takovým druhem zvířat či netvorů, s nímž už se v některém z předchozích dobrodružství postava střetla, získává Výhodu o velikosti 2. (bez aktivace, Duše)"
+name,Znalec krajiny
+flavor,"Ví, kde je možno se ztratit nepřátelům, opevnit se ve staré zřícenině nebo jak daleko je to k nejbližšímu brodu."
+description,"Hráč může určit, že se v blízkém okolí vyskytuje nějaký krajinný prvek, například skalní průrva, horská bystřina nebo husté křoviny. (aktivace:1 Duše)"
+name,Odhad kořisti
+flavor,"Proč se štvát za baziliškem přes hvozd, když ze stop je zřejmé, kam má namířeno?"
+description,"Hráč určí, kam tvor pronásledovaný družinou míří nebo kudy musí projít a jak je mu na základě toho možné nadběhnout nebo alespoň výrazně zkrátit vzdálenost. (aktivace: 1 Duše)"
+class,Šaman
+name,Čarovné nápoje
+flavor,"Jeho oborem jsou nápoje lásky, prášky vyvolávající záchvaty zběsilosti a jiné podivné dryáky."
+description,"Postava s touto vyhrazenou dovedností dokáže vyrobit omamnou látku, která způsobí, že cíl se zachová určitým způsobem k prvnímu člověku, kterého potká od okamžiku, kdy nastoupí účinky podané látky. (aktivace: 1 surovina)"
+name,Měnič podob
+flavor,"Říkají o něm, že je vlkodlak, ale on tvrdí, že má své nadání plně pod kontrolou."
+description,Postava s touto vyhrazenou dovedností se dokáže proměnit ve zvíře a jednat ve zvířecí podobě. (aktivace: 2 Tělo)
+name,Neviditelný jezdec
+flavor,"Umí zvířata ovládat a pouhé pírko nebo chumáč srsti mu stačí, aby mohl následovat svého zvířecího přítele kamkoliv."
+description,"Postava s touto vyhrazenou dovedností dokáže ovládnout jednání určitého zvířete až do soumraku či úsvitu. (aktivace: 1 Vliv) Postava také dokáže využívat smysly a dávat pokyny zvířeti, které je jí přátelsky nakloněné, pomocí symbolického dotyku (tedy pokud má u sebe například pírko z křídla, svléknutou hadí kůži nebo několik chlupů zvířete). Nemůže však takto zvíře ovládat proti jeho vůli. (aktivace: 1 Vliv)"
+name,Vládce šelem
+flavor,"Ještě dlouho po jeho odchodu zůstávají zvířata zuřivá nebo krotká jako beránci, pobíhají zmateně v kruzích nebo naopak neomylně sledují stopu."
+description,"Postava s touto vyhrazenou dovedností dokáže vytvořit kouzlo zvířecí magie, které bude trvat až do soumraku či do úsvitu. (aktivace: 1 Vliv)"
+name,Znak vlkodlaka
+flavor,"Zvířata, jež vkročí do magického kruhu, nevysvětlitelně zdivočí nebo vyjí strachy."
+description,"Postava s touto vyhrazenou dovedností dokáže vytvořit magický obrazec a jeho prostřednictvím sesílat kouzla magie zvířat. (bez aktivace, Duše)"
+name,Znak můry
+flavor,"Utají hříchy i zločiny, na něž se má zapomenout, tak dobře, že se o nich lidem ani nezdá."
+description,"Postava s touto vyhrazenou dovedností dokáže vytvořit magický obrazec a jeho prostřednictvím přimět síly snového světa, aby strážily určité tajemství. (bez aktivace, Duše)"
+name,Medicinman
+flavor,Dokáže přivolat síly země a léčit jimi zvířata nebo je zaklít do ochranných amuletů.
+description,"Postava je zběhlá (některé manévry zdarma) v léčení zvířat a ve výrobě a podávání omamných látek. (bez aktivace, Duše)"
+name,Zvěropán
+flavor,Může předstoupit před rozzuřenou medvědici a zamručením ztišit její hněv.
+description,"Postava je mistrem (posílené manévry) v magii zvířat, při nichž využije něco, co patřilo tomu druhu zvířete, vůči němuž používá magii – například vlčí zub, když sesílá kouzlo na vlka. (bez aktivace, Vliv)"
+name,Velký hadač
+flavor,"Jeho duše se snadno odpoutá od těla, hovoří s duchy a navštěvuje místa mimo náš svět."
+description,"Postava je mistrem (posílené manévry) v hadačství, tedy ve využívání snového světa. (bez aktivace, Duše)"
+name,Vůdce smečky
+flavor,"Obvykle si ze setkání s ním zapamatují jen podmanivý, divoký pohled a smečku zuřivých vlků."
+description,"Při magii zvířat může postava při každé své akci směřované na členy přirozeně vzniklé skupiny zvířat použít zdarma manévr rozsáhle. (bez aktivace, Vliv)"
+name,Bezmezná důvěra
+flavor,"V těch, kdo se podřídí jeho vůli, dokáže vyvolat mimořádnou věrnost a oddanost."
+description,"Na hojení jizev na Poutu jakéhokoliv pomocníka a na posilování Pouta stačí postavě vynaložit o jednu platbu méně. (bez aktivace, Vliv)"
+name,Stopy zvěře
+flavor,"Říká, že zvířata žijí všude kolem nás, aniž bychom si to uvědomovali, a snadno vám to dokáže."
+description,"Hráč může určit, že se v dohledu postavy nacházejí známky nedávné přítomnosti určitého zvířete, které by se v daném prostředí mohlo vyskytovat, například myší díra, stopy jelena, kaliště divočáků, mršina medvěda a podobně. (aktivace: 1 Duše)"
+class,Druid
+name,Paměť vody
+flavor,Horká polévka tryskající z kotle nebo víno rozlévající se pod nohama bojujících jako proud dokážou z hospodské rvačky udělat skutečné peklo.
+description,"Postava s touto vyhrazenou dovedností dokáže působit i na vodu, kterou přetvořila lidská ruka, například polévku v kotli nebo pivo v korbelu. (aktivace: 1 Duše) Postava také dokáže vytvořit vodní kouzlo, které bude trvat až do soumraku či do úsvitu, nebudeli voda uklidněna. (aktivace: 1 Duše)"
+name,Paměť kamene
+flavor,Pod druidovým dotekem praskají zdi chrámů a reznou čepele mečů.
+description,"Postava s touto vyhrazenou dovedností dokáže působit i na zemi, kterou přetvořila lidská ruka, například kamennou sochu, hliněnou nádobu nebo kovovou hlavici kopí. (aktivace: 1 Duše) Postava také dokáže vytvořit zemní kouzlo, které"
+name,"bude trvat až do soumraku či do úsvitu, nebudeli země uklidněna. (aktivace: 1 Duše)"
+flavor,Paměť dřeva
+description,"Kdo tvrdí, že topor kladiva nemůže obrůst trny a rám okna obrazit listím, ten se bude velice divit."
+name,"Postava s touto vyhrazenou dovedností dokáže působit i na rostliny, které přetvořila lidská ruka, například dřevo dveří nebo sušenou květinu. (aktivace: 1 Duše) Postava také dokáže vytvořit kouzlo dřeva, které bude trvat až do soumraku či do úsvitu, nebudeli rostlina uklidněna. (aktivace: 1 Duše)"
+flavor,Znak vodanoje
+description,"Nepřistupuj k vodě, vidíš-li na břehu znamení vzedmutých vln a rozbouřené hladiny."
+name,"Postava s touto vyhrazenou dovedností dokáže vytvořit magický obrazec a jeho prostřednictvím sesílat kouzla vodní magie. (bez aktivace, Duše)"
+flavor,Znak skalnika
+description,"Pod převisy a na hranách skal, na okraji bažin i v úzkých soutěskách, tam všude připravují druidi své čarovné nástrahy."
+name,"Postava s touto vyhrazenou dovedností dokáže vytvořit magický obrazec a jeho prostřednictvím sesílat kouzla magie země. (bez aktivace, Duše)"
+flavor,Znak lešije
+description,"Svazky bylin a symboly načmárané hlínou na kůru stromů vyznačují místa, kam sahá druidova vláda nad hvozdem."
+name,"Postava s touto vyhrazenou dovedností dokáže vytvořit magický obrazec a jeho prostřednictvím sesílat kouzla rostlinné magie. (bez aktivace, Duše)"
+flavor,Mlha a led
+description,"Vodní magie je jeho doménou, ať už jde o horkou páru, jež pálí v očích, nebo vlny podrážející nohy a strhávající lidi do hlubin."
+name,"Postava je mistrem (posílené manévry) v kouzlech ovládajících vodu v její přírodní podobě a v lámání vodních kouzel. (bez aktivace, Duše)"
+flavor,Skály a prach
+description,"Je pánem kamene i hlíny, jeho kouzla otřásají zemí a rozbíjejí skály. "
+name,"Postava je mistrem (posílené manévry) v kouzlech ovládajících zemi v její přírodní podobě a v lámání zemních kouzel. (bez aktivace, Duše)"
+flavor,Kořeny a šlahouny
+description,"Vládne stromům i bylinám a pohybuje jejich větvemi a stonky, jako by byly jeho rukama. "
+name,"Postava je mistrem (posílené manévry) v kouzlech ovládajících živé rostliny a v lámání rostlinných kouzel. (bez aktivace, Duše)"
+flavor,Spodní proudy
+description,Dokáže stáhnout vírem do hlubiny malý člun nebo zalít vlnou palubu lodi a smést z ní několik členů posádky.
+name,"Při vodních kouzlech může postava při každé své akci směřované na skupinu cílů nacházejících se poblíž sebe použít zdarma manévr rozsáhle. (bez aktivace, Duše)"
+flavor,Tíha země
+description,"Vytváří bažiny, jež zadrží celý oddíl skřetů, a celé řadě lučištníků zkazí střelbu díky písku ujíždějícímu pod nohama."
+name,"Při zemních kouzlech může postava při každé své akci směřované na skupinu cílů nacházejících se poblíž sebe použít zdarma manévr rozsáhle. (bez aktivace, Duše)"
+flavor,Hněv lesa
+description,"Nikoliv jen jeden strom, ale celá řada pralesních velikánů nebo houští trnitých keřů mohou na jeho pokyn zadržovat nepřátele."
+name,"Při rostlinných kouzlech může postava při každé své akci směřované na skupinu cílů nacházejících se poblíž sebe použít zdarma manévr rozsáhle. (bez aktivace, Duše)"
+class,Lupič
+name,Dotykový jed
+flavor,"Darovat urozené dámě rukavičky je velmi praktické. Obzvlášť, pokud ji chcete zabít."
+description,"Postava s touto vyhrazenou dovedností dokáže připravit jedy, které působí již při letmém kontaktu s pokožkou. (aktivace: 3 suroviny)"
+name,Mistr klíčník
+flavor,Dokáže odemykat zámky a vyřazovat pasti třeba i hřebíkem nebo kouskem dřívka.
+description,"Postava může při odemykání zámků a odstraňování mechanických pastí udělit jizvu jakémukoliv předmětu, který použije jako nouzový nástroj. Předmět tak zničí a získá tím 1 zdroj jako při zničení zámečnického nářadí běžné kvality. (bez aktivace, Tělo)"
+name,Městské stíny
+flavor,"Vyhoupne se na střechu trhovcova stánku nebo se vmáčkne do temného rohu síně, zatímco stráže bezradně procházejí kolem."
+description,"Postava s touto vyhrazenou dovedností se dokáže ve městě skrýt i na místech, kde není k dispozici vhodný úkryt, a dokáže setřást i pronásledovatele, kteří jsou jí přímo v patách. (aktivace: 1 Vliv)"
+name,Pavouk
+flavor,"Dokáže bojovat s nepřáteli i v okamžiku, kdy visí hlavou dolů, a šplhat umí snad i po stropě."
+description,"Postava je zběhlá (některé manévry zdarma) ve vzdušné akrobacii. (bez aktivace, Duše)"
+name,Mechanik
+flavor,Zbožňuje složité zámky a mechanická hejblátka víc než žena šperky.
+description,"Postava je zběhlá (některé manévry zdarma) v rozpoznávání a odhadování mechanismů a v práci se zámky. (bez aktivace, Duše)"
+name,Záškodník
+flavor,Přípravu pastí a léček v městském prostředí ovládá jako nikdo jiný.
+description,"Postava je zběhlá (některé manévry zdarma) v líčení a odstraňování mechanických pastí a ve výrobě kontaktních jedů. (bez aktivace, Duše)"
+name,Padělatel
+flavor,"Městská pečeť jeho výroby je důvěryhodnější než ta, která vyšla z radniční kanceláře."
+description,"Postava je zběhlá (některé manévry zdarma) ve falšování, uplatňování a poznávání padělků. (bez aktivace, Duše)"
+name,Mordýř
+flavor,Je mistrem v přípravě léček a přepadů v odlehlých uličkách.
+description,"Postava je mistrem (posílené manévry) v akcích směřujících k překvapivému přepadení nepřátel ve městě. (bez aktivace, Duše)"
+name,Speciální výcvik
+flavor,Odstraňování skupin stráží a rozhazování nášlapných ježků jsou jeho denním chlebem.
+description,"Při líčení mechanických pastí (na libovolný počet cílů) a při plížení se a útočení ze zálohy ve městě, směřujeli pouze na dva cíle, může postava při každé své akci použít zdarma manévr rozsáhle. (bez aktivace, Duše)"
+name,Líčidla a masky
+flavor,Dokonale přestrojí své společníky a naučí je i pár osvědčených hereckých triků.
+description,"Když postava pomáhá svým pomocníkům nebo jiným postavám předstírat, že jsou někým jiným, může za ně platit svými zdroji. (bez aktivace, Vliv)."
+name,Jako blesk
+flavor,Dokáže zaútočit skrytou zbraní rychleji než podrážděná zmije.
+description,"Když postava vstupuje do konfliktu se soupeřem tak, že na něj zaútočí krátkou zbraní určenou k vrhání nebo k boji zblízka, přičemž soupeř o této zbrani nevěděl (postava ji například měla v pouzdře pod pláštěm, skrývala ji za zády nebo pod stolem), získává Výhodu o velikosti 2. (bez aktivace, Tělo)"
+name,Město jako na dlani
+flavor,"Prošel tolika vesnicemi i městy, že v každém novém už se zorientuje takřka poslepu."
+description,"Pokud je postava ve městě nebo na vsi, může hráč určit, že v jejím dohledu se nachází nějaké místo či prvek obvyklý pro dané prostředí, například slepá ulička, stoka, hřbitov, podloubí nebo určitá budova. (aktivace: 1 Duše)"
+class,Zvěd
+name,Lesní přízrak
+flavor,Má zaslouženou pověst nepolapitelného zbojníka či špeha.
+description,"Postava s touto vyhrazenou dovedností se dokáže v divočině skrýt i na místech, kde není k dispozici žádný vhodný úkryt, a dokáže setřást i pronásledovatele, kteří jsou jí přímo v patách. (aktivace: 1 Vliv)"
+name,Nouzové střely
+flavor,Dokáže zabít protivníka třeba i vrženým oblázkem nebo skleněným střepem.
+description,"Postava dokáže při vrhání na jakýkoliv cíl udělit jizvu jakémukoliv předmětu, který použije jako nouzový nástroj. Předmět tak zničí a získá tím 1 zdroj jako při zničení vrhací zbraně běžné kvality. (bez aktivace, Tělo)"
+name,Černá ovce
+flavor,"Když se dostane do úzkých, lže, vykrucuje se i ponižuje bez ohledu na to, co si o něm budou myslet ostatní."
+description,"Postava dokáže za zdroje z jizvy na vlivu úrovně 1 dosáhnout úspěchu ve zkoušce nebo zabránit neúspěchu ve střetu bez ohledu na velikost svého aktuálního Ohrožení. (bez aktivace, Vliv)"
+name,Nájezdník
+flavor,Ze sedla koně nemilosrdně kosí nepřátele jako žnec obilí.
+description,"Postava je zběhlá (některé manévry zdarma) a zároveň je mistrem (posílené manévry) v jízdní střelbě a vrhu na lidi, zvířata a neživé cíle. (bez aktivace, Tělo)"
+name,Kapitán
+flavor,"Ať už je za tím jeho osobní kouzlo nebo třeba řečnické nadání, lidé by ho následovali kamkoliv."
+description,"Postava je mistrem (posílené manévry) ve vedení lidí mimo boj. (bez aktivace, Vliv)."
+name,Šedá eminence
+flavor,"Neptejte se ho, jak se stalo, že vašeho konkurenta postihla ta nepříjemná nehoda nebo že škraloup na vaší pověsti je náhle zapomenut."
+description,"Postava je mistrem (posílené manévry) ve využívání svého vlivu v podsvětí, v utajování informací a v obnovování lidského vlivu. (bez aktivace, Vliv)."
+name,Zbojník
+flavor,"Ať má v ruce luk nebo vrhací nůž, každý jeho zásah dává vzniknout nové legendě."
+description,"Postava je mistrem (posílené manévry) v pěší střelbě a vrhání na lidi, zvířata a neživé cíle. (bez aktivace, Tělo)"
+name,Přískokem vpřed
+flavor,Neochvějně míří ke svému cíli a vyhýbá se střelám i vrženým oštěpům nepřátel.
+description,"Když postava čelí střelbě nebo vrhání, může v každém kole konfliktu použít jednou zdarma manévr obrana. (bez aktivace, Tělo)"
+name,Kamufláž
+flavor,"S jeho pomocí může celá skupina zmizet v postranní uličce nebo hluboké strži, jako by tu nikdy nebyla."
+description,"Když postava pomáhá svým pomocníkům nebo jiným postavám ukrýt se v jakémkoliv prostředí, může za ně platit svými zdroji. (bez aktivace, Duše)"
+name,Budu tě krýt
+flavor,Dokáže krýt štítem nebo sprškou šípů postup svého spolubojovníka v nepřátelské palbě.
+description,"Postava může zaplatit svými zdroji za svého pomocníka nebo jinou postavu, která se nachází dostatečně blízko a čelí střelbě nebo vrhání. (bez aktivace, Duše)"
+name,Šeptanda
+flavor,Pár vhodně roztroušených poznámek dokáže rychle upevnit postavení jeho přítele ve skupině či ve společnosti.
+description,"Když se někomu přiměřeně dlouho věnuje, může mu předat libovolné množství svých zdrojů Vlivu. (bez aktivace, Vliv)"
+name,Znalec podsvětí
+flavor,"Metody zločinců má v malíčku, ostatně sám je už nejednou použil."
+description,"Hráč může určit, že někde v okolí pracuje zločinecká organizace, a uvést o ní jednu zajímavost, například jaké nátlakové metody má v oblibě nebo z čeho žije. (aktivace: 1 Vliv)"
+class,Vědmák
+name,Znamení Fehu
+flavor,"Mocné gesto, jež probudí v nestvůře plamen stravující ji zevnitř."
+description,"Postava s touto vyhrazenou dovedností dokáže pomocí znamení seslat na nemrtvého, oživeného či běsa silné prokletí, které bude trvat do nejbližšího soumraku či úsvitu. (aktivace: 1 Vliv)"
+name,Znamení Othala
+flavor,"Prsty propletené ve znaku, který odhalí oživlé mrtvoly a skryté běsy."
+description,"Postava s touto vyhrazenou dovedností dokáže rozpoznat nadpřirozené bytosti zvláštním smyslem, který jí znamení na chvíli propůjčí. (aktivace: 1 Vliv)"
+name,Znamení Raidho
+flavor,"Ochranné znamení umožňující ostatním, aby pohlédli do očí hrůzám, jimž vědmák čelí každý den."
+description,"Postava s touto vyhrazenou dovedností dokáže na dálku snížit znamením Ohrožení komukoliv, kdo je ve střetu s nemrtvými, oživenými či běsy. (bez aktivace, Vliv)."
+name,Znamení Berkano
+flavor,"Letmé zkřížení rukou, jež překazí magické úklady proti vědmákovi."
+description,"Postava s touto vyhrazenou dovedností dokáže sama sebe ochránit znamením proti jakémukoliv kouzlu, které je směřováno na ni. (aktivace: 1 Duše)"
+name,Znamení Tiwaz
+flavor,Složitá pozice zkroucených prstů dodá vědmákovi nadlidskou rychlost a pohotovost.
+description,"Postava s touto vyhrazenou dovedností dokáže po provedení znamení až do konce konfliktu, ve kterém se právě nachází, používat při tělesných protiakcích manévr obrana zdarma. (aktivace: 2 Duše)"
+name,Znak slunce
+flavor,Slunce je symbolem světla a života. Jeho symbol nedovolí mrtvým vstoupit mezi živé a oslabí moc běsů.
+description,"Postava s touto vyhrazenou dovedností dokáže vytvořit magický obrazec a jeho prostřednictvím sesílat vědmácká znamení. (bez aktivace, Duše)"
+name,Stříbrná zbraň
+flavor,Pro živoucí mrtvé a přírodní démony je lesk stříbra a jeho ostrý svist smrtící.
+description,"Postava je mistrem (posílené manévry) v pěším boji zblízka proti nemrtvým a běsům, když bojuje svou speciální stříbrnou zbraní. (bez aktivace, Tělo)"
+name,Vymítač
+flavor,"Studoval zaklínačská znamení tak dlouho, že je nyní dokáže používat s neobyčejným účinkem."
+description,"Postava je mistrem (posílené manévry) v používání vědmáckých znamení. (bez aktivace, Vliv)"
+name,Postrach přízraků
+flavor,"Běsi ani nemrtví už ho nemohou zaskočit, dokáže je vlákat do pasti, stejně jako zahnat na útěk."
+description,"Postava je mistrem (posílené manévry) v odhadování zvláštních schopností, lákání a zastrašování běsů a nemrtvých. (bez aktivace, Vliv)"
+name,Svatý hněv
+flavor,Svými znameními dokáže ochromit či zahnat na útěk celé zástupy démonů a nemrtvých.
+description,"Při provádění znamení může postava při každé své akci směřované na skupinu cílů nacházejících se poblíž sebe použít zdarma manévr rozsáhle. (bez aktivace, Duše)"
+name,Zmutované tělo
+flavor,Jedy i omamné látky jsou pro něj jako mateřské mléko a nebojí se ani pohledu do očí baziliška.
+description,"Když postava čelí účinkům jedu, omamné látky nebo ochromujících zvláštních schopností nestvůr, může podstoupit výzvu, aniž by k tomu musela provést akci. (bez aktivace, Tělo)"
+name,Zrnko pravdy
+flavor,"Jakkoliv pohádkově může příběh znít, vědmák z něj dokáže vyloupnout zdravé jádro."
+description,"Postava může povyprávět určitou legendu, pověst či pověru, a hráč určí, že nějaká její část je pravdivá. Která část to bude, však rozhodne Průvodce. (bez aktivace, Duše)"
+class,Alchymista
+name,Živá voda
+flavor,"Elixír života, s jehož pomocí lze provádět věci, které jsou v léčitelském umění považovány za nemožné. "
+description,"Postava s touto vyhrazenou dovedností dokáže vyrobit lektvar, který člověku či zvířeti okamžitě zhojí jinak nevyléčitelnou tělesnou jizvu, například vypíchnuté oko, odťatou ruku a podobně. Jizva nemůže být starší než od poslední rovnodennosti či slunovratu. (aktivace: 12 surovin)"
+name,Mystický ranhojič
+flavor,Díky svému nadání vrátí život do zkamenělé paže nebo pomůže sténající víle.
+description,"Postava s touto vyhrazenou dovedností dokáže odstraňovat následky magie působící na tělo (například proměnu v led, kulhání následkem kletby nebo ochromení), ačkoliv neovládá příslušný magický obor nebo nezná přesnou povahu kouzla či složení jedu. Umí též léčit nadpřirozené bytosti. (aktivace: 1 Duše)"
+name,Neobvyklé třaskaviny
+flavor,"Pokud právě skončil s přípravou pasti, neodvažujte se ani si odkašlat."
+description,"Postava s touto vyhrazenou dovedností dokáže vyrobit třaskavinu nebo plynný jed, které budou odpáleny či uvolněny určitým zvukem, ba dokonce vyslovením určitého slova v doslechu. (aktivace: 1 surovina)"
+name,Posílení elixíru
+flavor,"Složitým rituálem, vhodným dávkováním a kombinací s dalšími přísadami dokáže zázračné účinky svých nápojů prodloužit."
+description,"Postava s touto vyhrazenou dovedností dokáže podat elixír tak, že bude působit až do nejbližšího soumraku či úsvitu. (aktivace: 3 suroviny)"
+name,Pán golemů
+flavor,Jeho tajné vědomosti mu umožňují udržovat při životě dva umělé služebníky naráz.
+description,"Postava s touto vyhrazenou dovedností dokáže vložit ve stejné době umělý život do dvou různých bytostí a využívat je jako pomocníky. (bez aktivace, Vliv)"
+name,Umělá duše
+flavor,"Umělá a mechanická stvoření vytvořená jeho rukou toho umějí skoro tolik, co živý tvor."
+description,"Postava s touto vyhrazenou dovedností dokáže vytvořit umělou bytost, která je schopná hovořit a provádět samostatně jednoduché úkoly, přičemž může mít ve své charakteristice až dvě různé skupiny dovedností, ovšem za dvojnásobnou cenu. (bez aktivace, Vliv)"
+name,Mudrc
+flavor,"Jeho znalosti alchymie, okultních věd i magických artefaktů jsou imponující."
+description,"Postava je zběhlá (některé manévry zdarma) v alchymických znalostech a v získávání respektu, úcty a pozornosti předvedením svých vědomostí. (bez aktivace, Duše)"
+name,Ohněstrůjce
+flavor,"Jeho oblíbeným oborem jsou třaskavé směsi, leptající látky a jedovatý kouř."
+description,"Postava je zběhlá (některé manévry zdarma) ve výrobě a používání třaskavin, žíravin a plynných jedů. (bez aktivace, Duše)"
+name,Výrobce elixírů
+flavor,Dokáže namíchat zázračný elixír během chvíle a veškeré poměry magických přísad má v malíku.
+description,"Postava je zběhlá (některé manévry zdarma) ve výrobě a podávání elixírů. (bez aktivace, Duše)"
+name,Stvořitel
+flavor,Zkoumal tajemství šémů a oživovací magie celé roky a nikdo se mu dnes nevyrovná.
+description,"Postava je mistrem (posílené manévry) ve vytváření a ovládání umělých bytostí a v lámání oživovací magie. Zároveň bytosti, které vytvoří, jsou mistry v provádění činností, které spadají do jejich charakteristiky. (bez aktivace, Vliv)"
+name,Tělesná stráž
+flavor,"Jeho pomocníci jsou mu bezmezně oddáni. Kdo napadne jejich pána, setká se s jejich hněvem."
+description,"Na tělesné akce vedené proti postavě může její pomocník reagovat i pomocí manévru obrana, jestliže se nachází poblíž. (bez aktivace, Tělo)"
+name,Hračička
+flavor,"Všichni dodnes vzpomínají na to, jak na audienci u vévodkyně vytáhl z rukávu mechanickou myš, která pískala."
+description,"Hráč může kdykoliv určit, že postava má u sebe malý, dokonale nepraktický, ale zároveň fascinující vynález. (aktivace: 1 Duše)"
+class,Čaroděj
+name,Dračí dech
+flavor,Oheň stvořený jeho vůlí taví kov a rozpaluje kámen.
+description,"Postava s touto vyhrazenou dovedností dokáže zabíjet pomocí samotné ohnivé magie a oheň jí stvořený má sílu, jaká je ve středu kovářské výhně, takže taví kov a rozpaluje kámen do ruda. (aktivace: 1 Duše)"
+name,Síla vichřice
+flavor,Pouhým máchnutím ruky vyvrátí strom z kořenů nebo zvedne do vzduchu obrovský balvan.
+description,"Postava s touto vyhrazenou dovedností dokáže zabíjet pomocí samotné větrné magie a umí pohybovat i s věcmi, které by uzvedl pouze obr. (aktivace: 1 Duše)"
+name,Věčný žár
+flavor,"Svíce hořící v jeho komnatách až do úsvitu jsou to nejmenší. Slyšeli jste už o planoucích mečích nebo o nehasnoucím oblaku jisker, jenž každou chvíli mění tvar?"
+description,"Postava s touto vyhrazenou dovedností dokáže vytvořit ohnivé kouzlo, které bude trvat až do soumraku či do úsvitu, nebudeli oheň uhašen. (aktivace: 1 Duše)"
+name,Kvílení meluzíny
+flavor,"Jeho větrná kouzla dokážou zařídit, že chodbou nelze až do večera projít kvůli strašlivému vichru nebo že těžký balvan visí celé hodiny nehybně ve vzduchu."
+description,"Postava s touto vyhrazenou dovedností dokáže vytvořit větrné kouzlo, které bude trvat až do soumraku či do úsvitu, nebudeli překonáno silou. (aktivace: 1 Duše)"
+name,Znak salamandra
+flavor,"Dotkne-li se někdo předmětu nebo vkročí-li na čarodějem označená místa, mohou mu vlasy a vousy vzplát plamenem nebo se může začít dusit černým dýmem."
+description,"Postava s touto vyhrazenou dovedností dokáže vytvořit magický obrazec a jeho prostřednictvím sesílat kouzla ohnivé magie. (bez aktivace, Duše)"
+name,Znak sylfy
+flavor,V magickém kruhu může při vkročení nepřítele rozhoupat vítr zvoneček a dveře jím označené udrží zavřené síla vichrů.
+description,"Postava s touto vyhrazenou dovedností dokáže vytvořit magický obrazec a jeho prostřednictvím sesílat kouzla větrné magie. (bez aktivace, Duše)"
+name,Pán ohně
+flavor,"Plameny, jež sebere dlaní z táborového ohně nebo z pochodně a vrhne proti nepříteli, pálí jako černé svědomí."
+description,"Postava je mistrem (posílené manévry) v ohnivých kouzlech, k nimž využije jako základ přirozený plamen (postačí i hořící svíce) nebo žár či dým (postačí i dohasínající ohniště), a v lámání ohnivých kouzel. (bez aktivace, Duše)"
+name,Vládce větru
+flavor,I ze slabého vánku se může v jeho rukou zrodit matka všech bouří.
+description,"Postava je mistrem (posílené manévry) ve vzdušných kouzlech, k nimž postava využije jako základ přirozený vítr (postačí i zvíření vzduchu pláštěm či vějířem, ale nikoliv jen fouknutí), a v lámání vzdušných kouzel. (bez aktivace, Duše)"
+name,Plamenné peklo
+flavor,Máchnutí rukou a vše kolem pohltí oheň a zahalí kouř.
+description,"Při ohnivých kouzlech může postava při každé své akci směřované na skupinu cílů nacházejících se poblíž sebe použít zdarma manévr rozsáhle. (bez aktivace, Duše)"
+name,Vzdušný vír
+flavor,Celé mračno šípů může srazit stranou pouhým gestem¨a skupinu nepřátel zdvihne do vzduchu a udeří jimi o skálu.
+description,"Při vzdušných kouzlech může postava při každé své akci směřované na skupinu cílů nacházejících se poblíž sebe použít zdarma manévr rozsáhle. (bez aktivace, Duše)"
+name,Magický štít
+flavor,"Dokáže odrážet nepřátelská kouzla a kletby, i když vzduch kolem něj jen jiskří magií."
+description,"Když postava čelí nepřátelské magii, může v každém kole konfliktu použít jednou zdarma manévr obrana. (bez aktivace, Tělo)"
+name,Společnost démonů
+flavor,"Démoničtí přítelíčci, skřítci či ohniví kohouti, kteří jej tak často obklopují, nenechají svého pána zahynout kouzlem ani v léčce."
+description,"Na duševní akce vedené proti postavě může její pomocník reagovat i pomocí manévru obrana, jestliže se nachází poblíž. (bez aktivace, Duše)"
+class,Mág
+name,Mámení smyslů
+flavor,"Iluze, které vytvořil, lze je jen těžko odlišit od skutečnosti."
+description,"Postava s touto vyhrazenou dovedností dokáže vytvořit iluzi, která působí na více smyslů, vyloučen je pouze hmat. (aktivace: 1 Duše za každý smysl navíc)"
+name,Přeludy
+flavor,"Jeho přeludy nejsou jen prchavým šálením, a mohou s vámi dokonce hovořit jako učenci."
+description,"Postava s touto vyhrazenou dovedností dokáže vytvořit iluzi, která bude trvat až do soumraku či do úsvitu, nebudeli odhalena či zničena kouzlem dříve. (aktivace: 1 Duše) Postava také dokáže vytvořit iluzi, která bude reagovat na podněty z okolí tak, jak mág rozhodne. (aktivace: 1 Duše)"
+name,Neviditelný loutkář
+flavor,Jeho vůle je jako drásající spáry. Dokáže si člověka podřídit nebo jej provázet jako neviditelný rádce.
+description,"Postava s touto vyhrazenou dovedností dokáže ovládnout jednání určitého člověka až do soumraku či úsvitu, nepřekoná-li oběť jeho působení silou své vůle. (aktivace: 1 Vliv) Postava také dokáže využívat smysly a hovořit na dálku s člověkem, který je jí přátelsky nakloněn, pomocí symbolického dotyku (tedy pokud má u sebe například pramínek jeho vlasů nebo jeho medailon  po mamince). Nemůže však takto člověka ovládat proti jeho vůli. (aktivace: 1 Vliv)"
+name,Požírač duší
+flavor,Pohrává si s lidskými pocity a vzpomínkami jako kejklíř s míčky.
+description,"Postava s touto vyhrazenou dovedností dokáže vytvořit kouzlo magie mysli působící na myšlení či pocity cíle, které bude trvat až do soumraku či do úsvitu. (aktivace: 1 Vliv) Postava také dokáže krást a měnit lidem vzpomínky až do soumraku či do úsvitu. (aktivace: 1 Vliv)"
+name,Znak fantóma
+flavor,"Kdo překročí čarovný kruh, kolem toho povstanou přízraky nebo začnou hořet neexistující plameny. Mnozí již takto zešíleli."
+description,"Postava s touto vyhrazenou dovedností dokáže vytvořit magický obrazec a jeho prostřednictvím sesílat kouzla magie iluzí. (bez aktivace, Duše)"
+name,Znak upíra
+flavor,"Dotkneteli se předmětu nebo vkročíte na místo, které zaklel, ztratíte vůli sami nad sebou."
+description,"Postava s touto vyhrazenou dovedností dokáže vytvořit magický obrazec a jeho prostřednictvím sesílat kouzla magie myšlenek. (bez aktivace, Vliv)"
+name,Odhodlaná mysl
+flavor,"Když se rozhodne, že prosadí svou vůli, nehledí na to, co to udělá s jeho vlastní duší."
+description,"Postava dokáže za zdroje z duševní jizvy úrovně 1 dosáhnout úspěchu ve zkoušce nebo zabránit neúspěchu ve střetu bez ohledu na velikost svého aktuálního Ohrožení. (bez aktivace, Duše)"
+name,Podivný přítelíček
+flavor,"Z malého diblíka či šotka, mluvící ropuchy nebo černého kocoura se v jeho společnosti stává potměšilé a nebezpečné stvoření."
+description,"Postava s touto vyhrazenou dovedností dokáže za stejnou cenu, jakou by ji stálo posílení Pouta o jeden bod, naučit svého pomocníka jednu zaříkávačskou dovednost nebo jednu zaříkávačskou zvláštní schopnost, kterou sama má či ovládá. Součet všech takto přidaných dovedností a zvláštních schopností nemůže přesáhnout hranici Vlivu postavy. (aktivace: 1 Vliv)"
+name,Lamač vůlí
+flavor,"Nemá to srdce nechat lidi, aby se rozhodovali sami, když on ví, co je pro ně dobré."
+description,"Postava je mistrem (posílené manévry) v myšlenkových kouzlech, při nichž využije svoji znalost nějakého tajemství člověka, jehož chce ovlivnit, a v lámání myšlenkových kouzel. (bez aktivace, Vliv)"
+name,Vládce iluzí
+flavor,"Jeho fantazie je příliš bohatá, než aby si své vize mohl nechat jen pro sebe."
+description,"Postava je mistrem (posílené manévry) v iluzionistických kouzlech, k nimž využije nějakou předlohu (například obraz či zmenšený model toho, co chce vytvořit), a v lámání iluzionistických kouzel. (bez aktivace, Duše)"
+name,Armáda přízraků
+flavor,"Na jeho pokyn povstávají davy strašidel, ze země raší neexistující bodce a desítky hlasů bez těla šepotají v temnotě."
+description,"Při iluzionistických kouzlech může postava při každé své akci vytvářející nebo ovlivňující skupinu totožných iluzí použít zdarma manévr rozsáhle. (bez aktivace, Duše)"
+name,Davová psychóza
+flavor,Je jako ti největší z kazatelů. Dokáže svými slovy přimět celý dav k pokání i k nenávisti.
+description,"Při myšlenkových kouzlech může postava při každé své akci směřované na přirozeně vzniklý dav lidí použít zdarma manévr rozsáhle. (bez aktivace, Vliv)"

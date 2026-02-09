@@ -1,0 +1,7 @@
+{
+  "name": "DraciDoupe2CompanionApp",
+  "description": "DraciDoupe2CompanionApp",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
