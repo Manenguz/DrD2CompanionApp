@@ -51,16 +51,14 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
 <body>
   <div id="root"></div>
-  <!-- Vite will handle the transpilation of index.tsx -->
-  <script type="module" src="/index.tsx"></script>
+  <!-- Use relative path for Vite to resolve correctly in subfolders -->
+  <script type="module" src="index.tsx"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        // Use relative path for service worker
         navigator.serviceWorker.register('./sw.js', { scope: './' })
           .then(reg => console.log('SW Registered', reg))
           .catch(err => console.error('SW registration failed:', err));
