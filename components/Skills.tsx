@@ -71,9 +71,9 @@ const Skills: React.FC<Props> = ({ character, updateCharacter }) => {
       {/* Permanent Racial Ability Display */}
       {character.racialAbility && selectedRacialData && (
         <section className="mb-10 animate-fade-in">
-          <h3 className="fantasy-title text-lg text-stone-400 mb-4 flex items-center gap-2 uppercase tracking-widest border-l-4 border-rose-900 pl-3">
+          {/*<h3 className="fantasy-title text-lg text-stone-400 mb-4 flex items-center gap-2 uppercase tracking-widest border-l-4 border-rose-900 pl-3">
             <i className="fas fa-dna text-rose-900"></i> Zvláštní rasová schopnost ({character.race})
-          </h3>
+          </h3>*/}
           <div className="bg-rose-900/10 border border-rose-500/30 p-5 rounded-2xl shadow-xl">
              <div className="flex justify-between items-center mb-1">
                 <span className="font-bold text-rose-400 uppercase tracking-wider">{selectedRacialData.name}</span>
@@ -86,9 +86,9 @@ const Skills: React.FC<Props> = ({ character, updateCharacter }) => {
 
       {/* Class Abilities Section */}
       <section className="mb-10 space-y-6">
-        <h3 className="fantasy-title text-lg text-stone-400 mb-4 flex items-center gap-2 uppercase tracking-widest border-l-4 border-amber-700 pl-3">
+        {/*<h3 className="fantasy-title text-lg text-stone-400 mb-4 flex items-center gap-2 uppercase tracking-widest border-l-4 border-amber-700 pl-3">
           <i className="fas fa-book-sparkles text-amber-700"></i> Dovednosti
-        </h3>
+        </h3>*/}
         
         {character.classes.length === 0 ? (
           <p className="text-stone-700 text-xs italic">Zatím žádná zvolená povolání...</p>
