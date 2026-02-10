@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Character, SlotState, StatPool, CharacterClass, Race } from '../types';
 
@@ -114,12 +115,19 @@ const CharacterSheet: React.FC<Props> = ({ character, updateCharacter }) => {
     <div className="flex flex-col h-full overflow-y-auto scrollbar-hide pb-24 bg-stone-950">
       <div className="p-4 bg-stone-900 border-b border-stone-800 relative">
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <span className="text-stone-300 text-xs font-bold uppercase tracking-[0.2em]">
-              {character.race}
-            </span>
-            <span className="text-stone-700">•</span>
-            <span className="text-stone-500 text-xs font-bold uppercase tracking-widest">Úroveň {totalLevel}</span>
+          <div className="flex flex-col">
+            <div className="flex items-center gap-2">
+              <span className="text-stone-300 text-xs font-bold uppercase tracking-[0.2em]">
+                {character.race}
+              </span>
+              <span className="text-stone-700">•</span>
+              <span className="text-stone-500 text-xs font-bold uppercase tracking-widest">Úroveň {totalLevel}</span>
+            </div>
+            {character.subrace && (
+              <span className="text-amber-700 text-[9px] font-bold uppercase tracking-[0.2em] mt-0.5">
+                {character.subrace}
+              </span>
+            )}
           </div>
           <button 
             onClick={() => setIsEditMode(!isEditMode)}

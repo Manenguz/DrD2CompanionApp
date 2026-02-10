@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Character, Race, SlotState } from '../types';
 import { RACIAL_ABILITIES_DATA } from '../data/racial-abilities';
+import { racesWithSubraces } from '../data/subraces';
 
 const BASE_CLASSES = ['Bojovník', 'Mastičkář', 'Zaříkávač', 'Lovec', 'Kejklíř'];
 
@@ -12,6 +13,7 @@ interface Props {
 const CharacterCreator: React.FC<Props> = ({ onCreate, onCancel }) => {
   const [name, setName] = useState('');
   const [race, setRace] = useState<Race>(Race.Clovek);
+  const [subrace, setSubrace] = useState<string>(racesWithSubraces[Race.Clovek][0]);
   const [ability, setAbility] = useState('');
   const [profession, setProfession] = useState(BASE_CLASSES[0]);
   const [telo, setTelo] = useState(5);
@@ -20,6 +22,23 @@ const CharacterCreator: React.FC<Props> = ({ onCreate, onCancel }) => {
 
   const totalPoints = telo + vule + vliv;
   const pointsLeft = 15 - totalPoints;
+
+  // Auto-select racial ability based on subrace "quick choice" tag
+  useEffect(() => {
+    const abilities = RACIAL_ABILITIES_DATA[race] || [];
+    const quickChoice = abilities.find(a => a.quickChoiceTag === subrace);
+    if (quickChoice) {
+      setAbility(quickChoice.name);
+    }
+  }, [subrace, race]);
+
+  const handleRaceChange = (newRace: Race) => {
+    setRace(newRace);
+    const defaults = racesWithSubraces[newRace];
+    if (defaults && defaults.length > 0) {
+      setSubrace(defaults[0]);
+    }
+  };
 
   const handleCreate = () => {
     if (!name || !ability || pointsLeft !== 0) return;
@@ -33,6 +52,7 @@ const CharacterCreator: React.FC<Props> = ({ onCreate, onCancel }) => {
       id: Date.now().toString(),
       name,
       race,
+      subrace,
       classes: [{ name: profession, level: 1 }],
       xp: 0,
       telo: createPool(telo),
@@ -70,14 +90,29 @@ const CharacterCreator: React.FC<Props> = ({ onCreate, onCancel }) => {
 
         <div>
           <label className="text-[10px] text-stone-500 uppercase font-bold tracking-[0.2em] mb-2 block">Rasa</label>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-3 gap-2">
             {Object.values(Race).map(r => (
               <button
                 key={r}
-                onClick={() => { setRace(r); setAbility(''); }}
-                className={`py-2 px-3 rounded-xl border text-[11px] font-bold uppercase transition-all ${race === r ? 'bg-amber-900/20 border-amber-500 text-amber-500' : 'bg-stone-900 border-stone-800 text-stone-600'}`}
+                onClick={() => handleRaceChange(r)}
+                className={`py-2 px-1 rounded-xl border text-[10px] font-bold uppercase transition-all ${race === r ? 'bg-amber-900/20 border-amber-500 text-amber-500' : 'bg-stone-900 border-stone-800 text-stone-600'}`}
               >
                 {r}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <label className="text-[10px] text-stone-500 uppercase font-bold tracking-[0.2em] mb-2 block">Původ / Kultura</label>
+          <div className="grid grid-cols-1 gap-2">
+            {racesWithSubraces[race].map(s => (
+              <button
+                key={s}
+                onClick={() => setSubrace(s)}
+                className={`py-3 px-4 rounded-xl border text-left transition-all ${subrace === s ? 'bg-amber-900/10 border-amber-700 text-amber-500' : 'bg-stone-900 border-stone-800 text-stone-400'}`}
+              >
+                <div className="text-[11px] font-bold uppercase tracking-wide">{s}</div>
               </button>
             ))}
           </div>

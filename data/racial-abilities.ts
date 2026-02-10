@@ -2,6 +2,7 @@ import { Race } from '../types';
 
 export interface RacialAbility {
   name: string;
+  quickChoiceTag?: string;
   flavor: string;
   description: string;
 }
@@ -9,12 +10,14 @@ export interface RacialAbility {
 export const RACIAL_ABILITIES_DATA: Record<string, RacialAbility[]> = {
   [Race.Clovek]: [
     { 
-      name: "Jménem krále (rychlá volba: Lidé království)", 
+      name: "Jménem krále", 
+      quickChoiceTag: "Lidé království",
       flavor: "Oddanost ušlechtilé věci mu dodává sílu vytrvat až do konce.", 
       description: "Když postava podstupuje zkoušku nebo střet, aby prosadila zájmy pána nebo organizace, kterým dlouhodobě slouží, a její život je při této zkoušce či střetu v ohrožení, dává jí každá jizva 1 zdroj navíc. (bez aktivace, Duše)" 
     },
     { 
-      name: "Zarputilost (rychlá volba: Osadníci)", 
+      name: "Zarputilost", 
+      quickChoiceTag: "Osadníci",
       flavor: "Mohou mu vyčítat, že je bezohledný, sobecký nebo paličatý, ale on to nazývá odvahou stát si za svým.", 
       description: "Z každé jizvy na Vlivu získává postava vždy 1 zdroj navíc. (bez aktivace, Vliv)" 
     },
@@ -24,7 +27,8 @@ export const RACIAL_ABILITIES_DATA: Record<string, RacialAbility[]> = {
       description: "Postava má nadání (2 manévry) pro svádění a získávání přízně osob opačného pohlaví. (bez aktivace, Vliv)" 
     },
     { 
-      name: "Lví srdce (rychlá volba: Barbaři)", 
+      name: "Lví srdce", 
+      quickChoiceTag: "Barbaři",
       flavor: "Je statečný a neotřese jím sebevětší nebezpečí či beznadějná situace.", 
       description: "Postava má nadání (2 manévry) čelit zastrašování či psychickému nátlaku. (bez aktivace, Duše)" 
     },
@@ -36,7 +40,8 @@ export const RACIAL_ABILITIES_DATA: Record<string, RacialAbility[]> = {
   ],
   [Race.Elf]: [
     { 
-      name: "Vznešenost (rychlá volba: Lid pahorků)", 
+      name: "Vznešenost", 
+      quickChoiceTag: "Lid pahorků",
       flavor: "Jeho osobní charisma rychle zastíní všechny fámy a špinavé pomluvy.", 
       description: "Na hojení jizev na Vlivu stačí postavě vynaložit o 1 zdroj méně. (bez aktivace, Vliv)" 
     },
@@ -46,12 +51,14 @@ export const RACIAL_ABILITIES_DATA: Record<string, RacialAbility[]> = {
       description: "Z každé duševní jizvy získává postava vždy 1 zdroj navíc. (bez aktivace, Duše)" 
     },
     { 
-      name: "Jsme jedné krve (rychlá volba: Lesní elfové)", 
+      name: "Jsme jedné krve", 
+      quickChoiceTag: "Lesní elfové",
       flavor: "Zvířata k němu cítí až zázračnou sounáležitost.", 
       description: "Postava má nadání (2 manévry) pro odhadování vlastností a úmyslů zvířat a pro jejich přesvědčování bez přímého ovládání. (bez aktivace, Vliv)" 
     },
     { 
-      name: "Plášť soumraku (rychlá volba: Lid noci)", 
+      name: "Plášť soumraku", 
+      quickChoiceTag: "Lid noci",
       flavor: "Naučil se procházet nocí neviděn, splynout se stíny a skrýt se zrakům ostatních.", 
       description: "Postava má nadání (2 manévry) pro skrývání se ve tmě, v šeru nebo při špatném osvětlení. (bez aktivace, Duše)" 
     },
@@ -63,17 +70,20 @@ export const RACIAL_ABILITIES_DATA: Record<string, RacialAbility[]> = {
   ],
   [Race.Trpaslik]: [
     { 
-      name: "Noční oči (rychlá volba: Hlubinní trpaslíci)", 
+      name: "Noční oči", 
+      quickChoiceTag: "Hlubinní trpaslíci",
       flavor: "I v nejčernější tmě vidí jako jiní v šeru. Šero je pro něj jasným dnem.", 
       description: "Postava s touto vyhrazenou dovedností dokáže vidět ve tmě. (bez aktivace, Duše)" 
     },
     { 
-      name: "Síla přísahy (rychlá volba: Horští trpaslíci)", 
+      name: "Síla přísahy", 
+      quickChoiceTag: "Horští trpaslíci",
       flavor: "Jednou dané slovo je pro trpaslíky nezrušitelné a posvátné.", 
       description: "Když postava podstupuje zkoušku nebo střet, aby splnila svou přísahu, a její život je přitom v ohrožení, dává jí každá jizva 1 zdroj navíc. (bez aktivace, Duše)" 
     },
     { 
-      name: "Nezdolnost (rychlá volba: Osamocení trpaslíci)", 
+      name: "Nezdolnost", 
+      quickChoiceTag: "Osamocení trpaslíci",
       flavor: "Co jiní vnímají jako vážné zranění, to je pro něho jenom škrábnutí.", 
       description: "Na hojení tělesných jizev stačí postavě vynaložit o 1 zdroj méně. (bez aktivace, Tělo)" 
     },
@@ -95,17 +105,20 @@ export const RACIAL_ABILITIES_DATA: Record<string, RacialAbility[]> = {
       description: "Postava s touto vyhrazenou dovedností dokáže rozpoznat hrozící nebezpečí, i když nemá k dispozici žádné běžnými smysly zachytitelné podněty. (bez aktivace, Duše)" 
     },
     { 
-      name: "Takový prcek! (rychlá volba: Horda)", 
+      name: "Takový prcek!", 
+      quickChoiceTag: "Horda",
       flavor: "Je snadné jej podcenit, neboť bojuje zuřivěji, než by člověk od hobita čekal.", 
       description: "Když postava bojuje zblízka se soupeřem větším než je sama, který ji dosud neviděl bojovat, dává jí každá jizva 1 zdroj navíc. (bez aktivace, Duše)" 
     },
     { 
-      name: "Dobrá nálada (rychlá volba: Usedlí hobiti)", 
+      name: "Dobrá nálada", 
+      quickChoiceTag: "Usedlí hobiti",
       flavor: "Na všechen děs a útrapy rázem zapomene, když před něj někdo postaví žejdlík piva a rozestele mu čistou postel.", 
       description: "Na hojení duševních jizev stačí postavě vynaložit o 1 zdroj méně. (bez aktivace, Duše)" 
     },
     { 
-      name: "Tichošlápek (rychlá volba: Potulní hobiti)", 
+      name: "Tichošlápek", 
+      quickChoiceTag: "Potulní hobiti",
       flavor: "Díky měkkému došlapu dokáže proklouznout kamkoliv zcela neslyšně.", 
       description: "Postava má nadání (2 manévry) pro tichý pohyb, pokud při něm nemá na nohách boty. (bez aktivace, Tělo)" 
     },
@@ -122,17 +135,20 @@ export const RACIAL_ABILITIES_DATA: Record<string, RacialAbility[]> = {
       description: "Postava s touto vyhrazenou dovedností dokáže zaslechnout i velmi tiché zvuky a orientovat se podle nich i ve tmě. (bez aktivace, Duše)" 
     },
     { 
-      name: "Zběsilost (rychlá volba: Spoutaní krollové)", 
+      name: "Zběsilost", 
+      quickChoiceTag: "Spoutaní krollové",
       flavor: "Bolest a chuť vlastní krve na rtech ho dokážou vybičovat k neskutečným výkonům.", 
       description: "Z každé tělesné jizvy získává postava vždy 1 zdroj navíc. (bez aktivace, Tělo)" 
     },
     { 
-      name: "Odznaky hrdinství (rychlá volba: Hraniční krollové)", 
+      name: "Odznaky hrdinství", 
+      quickChoiceTag: "Hraniční krollové",
       flavor: "Bizarní ozdoby, tetování nebo účes ohlašují, že vykonal odvážný skutek, a dodávají mu sebevědomí.", 
       description: "Postava má nadání (2 manévry) pro zastrašování všech tvorů inteligentnějších než zvířata. (bez aktivace, Vliv)" 
     },
     { 
-      name: "Zubří kůže (rychlá volba: Divocí krollové)", 
+      name: "Zubří kůže", 
+      quickChoiceTag: "Divocí krollové",
       flavor: "Tuhá srst jej chrání lépe než prošívaná zbroj.", 
       description: "Pokožka dává postavě slevu odpovídající běžné zbroji, avšak bez největších omezení. (bez aktivace, Tělo)" 
     },
@@ -143,3 +159,5 @@ export const RACIAL_ABILITIES_DATA: Record<string, RacialAbility[]> = {
     }
   ]
 };
+
+export default RACIAL_ABILITIES_DATA;

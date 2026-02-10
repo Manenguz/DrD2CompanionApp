@@ -1,3 +1,4 @@
+
 export enum Race {
   Clovek = 'Člověk',
   Elf = 'Elf',
@@ -32,6 +33,7 @@ export interface Character {
   id: string;
   name: string;
   race: Race;
+  subrace?: string;
   classes: CharacterClass[];
   xp: number;
   telo: StatPool;
