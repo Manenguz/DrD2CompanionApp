@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Character } from '../types';
 import classAbilitiesData from '../class-abilities';
@@ -9,17 +10,29 @@ interface Props {
 
 const Specializations: React.FC<Props> = ({ character, updateCharacter }) => {
   const [expandedClasses, setExpandedClasses] = useState<string[]>(character.classes.map(c => c.name));
+  const [isEditMode, setIsEditMode] = useState(false);
 
   const toggleClass = (className: string) => {
     setExpandedClasses(prev => prev.includes(className) ? prev.filter(c => c !== className) : [...prev, className]);
   };
 
-  const selectAbility = (className: string, abilityName: string, limit: number) => {
+  const toggleAbility = (className: string, abilityName: string, limit: number) => {
     const currentMap = character.classAbilities || {};
     const currentList = currentMap[className] || [];
     
-    // PERMANENT SELECTION: If already in list, do nothing
-    if (currentList.includes(abilityName)) return;
+    if (currentList.includes(abilityName)) {
+      // If in edit mode, we allow removal
+      if (isEditMode) {
+        const newList = currentList.filter(a => a !== abilityName);
+        updateCharacter({
+          classAbilities: {
+            ...currentMap,
+            [className]: newList
+          }
+        });
+      }
+      return;
+    }
     
     // Check if limit is reached
     if (currentList.length >= limit) return;
@@ -36,8 +49,15 @@ const Specializations: React.FC<Props> = ({ character, updateCharacter }) => {
 
   return (
     <div className="flex flex-col h-full bg-stone-950 text-stone-100 p-6 overflow-y-auto scrollbar-hide pb-24">
-      <div className="flex items-center gap-3 mb-6 border-b border-amber-900/30 pb-2">
+      <div className="flex justify-between items-center mb-6 border-b border-amber-900/30 pb-2">
         <h2 className="fantasy-title text-2xl text-amber-500">Speciálky</h2>
+        <button 
+          onClick={() => setIsEditMode(!isEditMode)}
+          className={`p-2 rounded-lg transition-all active:scale-90 ${isEditMode ? 'bg-amber-600 text-white shadow-[0_0_10px_rgba(245,158,11,0.4)]' : 'bg-stone-900 text-stone-500 border border-stone-800'}`}
+          title={isEditMode ? "Zamknout výběr" : "Upravit výběr"}
+        >
+          <i className={`fas ${isEditMode ? 'fa-check' : 'fa-cog'}`}></i>
+        </button>
       </div>
 
       <div className="space-y-6">
@@ -53,8 +73,9 @@ const Specializations: React.FC<Props> = ({ character, updateCharacter }) => {
             const selectedCount = selectedList.length;
             const isLimitReached = selectedCount >= charClass.level;
 
-            // Show selected abilities OR all available if not at limit
+            // In edit mode, show all. In normal mode, show selected or all if not at limit.
             const abilitiesToShow = classAbilities.filter(ability => {
+              if (isEditMode) return true;
               if (isLimitReached) {
                 return selectedList.includes(ability.name);
               }
@@ -87,20 +108,24 @@ const Specializations: React.FC<Props> = ({ character, updateCharacter }) => {
                         return (
                           <button
                             key={ability.name}
-                            disabled={isSelected}
-                            onClick={() => selectAbility(charClass.name, ability.name, charClass.level)}
-                            className={`text-left p-4 rounded-xl border transition-all duration-300 ${
+                            disabled={isSelected && !isEditMode}
+                            onClick={() => toggleAbility(charClass.name, ability.name, charClass.level)}
+                            className={`text-left p-4 rounded-xl border transition-all duration-300 relative ${
                               isSelected 
-                                ? 'bg-amber-900/10 border-amber-600 shadow-[0_0_15px_rgba(245,158,11,0.1)] cursor-default' 
-                                : 'bg-stone-900 border-stone-800 hover:border-stone-600 active:scale-[0.98]'
+                                ? isEditMode 
+                                  ? 'bg-rose-900/10 border-rose-900 shadow-[0_0_15px_rgba(225,29,72,0.1)] active:scale-95' 
+                                  : 'bg-amber-900/10 border-amber-600 shadow-[0_0_15px_rgba(245,158,11,0.1)] cursor-default' 
+                                : isLimitReached && !isEditMode
+                                  ? 'bg-stone-950 border-stone-900 opacity-40 cursor-not-allowed'
+                                  : 'bg-stone-900 border-stone-800 hover:border-stone-600 active:scale-[0.98]'
                             }`}
                           >
                             <div className="flex justify-between items-start mb-2">
-                              <span className={`text-xs font-bold uppercase tracking-widest ${isSelected ? 'text-amber-500' : 'text-stone-300'}`}>
+                              <span className={`text-xs font-bold uppercase tracking-widest ${isSelected ? (isEditMode ? 'text-rose-400' : 'text-amber-500') : 'text-stone-300'}`}>
                                 {ability.name}
                               </span>
                               {isSelected && (
-                                <i className="fas fa-check-circle text-amber-600 text-[10px]"></i>
+                                <i className={`fas ${isEditMode ? 'fa-minus-circle text-rose-600' : 'fa-check-circle text-amber-600'} text-[10px]`}></i>
                               )}
                             </div>
                             

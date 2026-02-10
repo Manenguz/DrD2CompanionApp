@@ -51,6 +51,7 @@
   }
 }
 </script>
+<link rel="stylesheet" href="/index.css">
 </head>
 <body>
   <div id="root"></div>
@@ -59,11 +60,38 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js', { scope: './' })
-          .then(reg => console.log('SW Registered', reg))
-          .catch(err => console.error('SW registration failed:', err));
+        // Simple and robust registration logic
+        const registerSW = async () => {
+          try {
+            // Skip registration if the environment is not suitable
+            if (!window.location || !window.location.href || window.location.href.startsWith('about:')) {
+              return;
+            }
+
+            // Using a simple relative path is the safest way to avoid 'Invalid URL' errors
+            // during URL construction. 
+            navigator.serviceWorker.register('./sw.js', { scope: './' })
+              .then(reg => {
+                console.log('SW Registered with scope:', reg.scope);
+              })
+              .catch(err => {
+                // Common error in preview/sandboxed environments - handle gracefully
+                if (err.name === 'SecurityError') {
+                  console.warn('ServiceWorker registration skipped: Cross-origin or sandbox restriction.');
+                } else {
+                  console.debug('ServiceWorker registration failed:', err);
+                }
+              });
+          } catch (error) {
+            // Ensure the main thread never crashes due to SW logic
+            console.warn('ServiceWorker initialization aborted.');
+          }
+        };
+
+        registerSW();
       });
     }
   </script>
+<script type="module" src="/index.tsx"></script>
 </body>
 </html>

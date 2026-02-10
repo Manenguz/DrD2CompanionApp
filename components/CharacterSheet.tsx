@@ -111,7 +111,6 @@ const CharacterSheet: React.FC<Props> = ({ character, updateCharacter }) => {
   };
 
   const selectRacialAbility = (abilityName: string) => {
-    if (character.racialAbility) return;
     updateCharacter({ racialAbility: abilityName });
   };
 
@@ -153,6 +152,7 @@ const CharacterSheet: React.FC<Props> = ({ character, updateCharacter }) => {
 
   const unlockedAdvanced = getUnlockedAdvancedClasses();
   const raceAbilities = RACIAL_DATA[character.race] || [];
+  const selectedRacialData = raceAbilities.find(a => a.name === character.racialAbility);
 
   return (
     <div className="flex flex-col h-full overflow-y-auto scrollbar-hide pb-24 bg-stone-950">
@@ -167,7 +167,8 @@ const CharacterSheet: React.FC<Props> = ({ character, updateCharacter }) => {
           </div>
           <button 
             onClick={() => setIsEditMode(!isEditMode)}
-            className={`p-2 rounded-lg transition-colors ${isEditMode ? 'bg-amber-600 text-white' : 'bg-stone-800 text-stone-400'}`}
+            className={`p-2 rounded-lg transition-all active:scale-90 ${isEditMode ? 'bg-amber-600 text-white shadow-[0_0_10px_rgba(245,158,11,0.4)]' : 'bg-stone-800 text-stone-400'}`}
+            title={isEditMode ? "Zamknout úpravy" : "Upravit list"}
           >
             <i className={`fas ${isEditMode ? 'fa-check' : 'fa-cog'}`}></i>
           </button>
@@ -175,21 +176,49 @@ const CharacterSheet: React.FC<Props> = ({ character, updateCharacter }) => {
       </div>
 
       <div className="p-4 space-y-4">
-        {/* Racial Ability Picker - Only shown if not selected */}
-        {!character.racialAbility && (
+        {/* Racial Ability Picker or Display */}
+        {character.racialAbility ? (
+          <div className="bg-stone-900 border border-stone-800 rounded-xl p-4 shadow-lg animate-fade-in group">
+            <div className="flex justify-between items-start mb-2">
+              <h3 className="text-[10px] font-bold text-stone-500 uppercase tracking-[0.2em]">Rasový rys</h3>
+              {isEditMode && (
+                <button 
+                  onClick={() => updateCharacter({ racialAbility: '' })}
+                  className="text-rose-900 hover:text-rose-500 transition-colors active:scale-90"
+                  title="Odstranit rys"
+                >
+                  <i className="fas fa-trash-can text-xs"></i>
+                </button>
+              )}
+            </div>
+            <div className="flex flex-col">
+              <span className="text-amber-500 text-sm font-bold uppercase tracking-wide flex items-center gap-2">
+                <i className="fas fa-dna text-[10px] text-amber-700"></i>
+                {character.racialAbility}
+              </span>
+              {selectedRacialData && (
+                <p className="text-[10px] text-stone-500 mt-2 italic leading-tight border-l-2 border-stone-800 pl-3">
+                  {selectedRacialData.desc}
+                </p>
+              )}
+            </div>
+          </div>
+        ) : (
           <div className="bg-stone-900 border border-stone-800 rounded-xl p-4 shadow-lg animate-fade-in">
-            <h3 className="text-[10px] font-bold text-rose-800 uppercase tracking-[0.2em] mb-3">Výběr rasového rysu</h3>
+            <h3 className="text-[10px] font-bold text-rose-800 uppercase tracking-[0.2em] mb-3 flex items-center gap-2">
+               <i className="fas fa-sparkles"></i> Výběr rasového rysu
+            </h3>
             <div className="space-y-3">
-              <p className="text-[11px] text-stone-500 italic">Tento výběr je trvalý a definuje původ hrdiny.</p>
+              <p className="text-[10px] text-stone-500 italic">Tyto schopnosti definují původ tvého hrdiny.</p>
               <div className="grid grid-cols-1 gap-2">
                 {raceAbilities.map(a => (
                   <button
                     key={a.name}
                     onClick={() => selectRacialAbility(a.name)}
-                    className="flex flex-col text-left bg-stone-800 border border-stone-700 hover:border-rose-900 p-3 rounded-lg transition-all group"
+                    className="flex flex-col text-left bg-stone-800 border border-stone-700 hover:border-amber-600/50 p-3 rounded-lg transition-all active:scale-[0.98] group"
                   >
-                    <span className="text-stone-300 group-hover:text-rose-400 text-xs font-bold uppercase tracking-wide">{a.name}</span>
-                    <span className="text-[10px] text-stone-500 group-hover:text-stone-400 mt-1 leading-tight">{a.desc}</span>
+                    <span className="text-stone-300 group-hover:text-amber-400 text-xs font-bold uppercase tracking-wide">{a.name}</span>
+                    <span className="text-[9px] text-stone-500 group-hover:text-stone-400 mt-1 leading-tight">{a.desc}</span>
                   </button>
                 ))}
               </div>
