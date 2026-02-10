@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { Character } from '../types';
-import classAbilitiesData from '../class-abilities';
+import classAbilitiesData from '../data/class-abilities';
 
 interface Props {
   character: Character;

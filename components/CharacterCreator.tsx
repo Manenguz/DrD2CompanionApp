@@ -1,50 +1,13 @@
 import React, { useState } from 'react';
 import { Character, Race, SlotState } from '../types';
-
-interface Props {
-  onCreate: (char: Character) => void;
-  onCancel: () => void;
-}
-
-const RACIAL_ABILITIES: Record<string, { name: string, desc: string }[]> = {
-  [Race.Clovek]: [
-    { name: "Jménem krále", desc: "Každá jizva dává 1 zdroj navíc při prosazování zájmů pána." },
-    { name: "Zarputilost", desc: "Z každé jizvy na Vlivu získává postava vždy 1 zdroj navíc." },
-    { name: "Idol žen či mužů", desc: "Nadání pro svádění a získávání přízně." },
-    { name: "Lví srdce", desc: "Nadání čelit zastrašování či psychickému nátlaku." },
-    { name: "Styky", desc: "Cizí postava dluží hrdinovi laskavost z minulosti." },
-  ],
-  [Race.Elf]: [
-    { name: "Vznešenost", desc: "Na hojení jizev na Vlivu stačí vynaložit o 1 zdroj méně." },
-    { name: "Tesknota", desc: "Z každé duševní jizvy získává postava vždy 1 zdroj navíc." },
-    { name: "Jsme jedné krve", desc: "Nadání pro odhadování úmyslů zvířat." },
-    { name: "Plášť soumraku", desc: "Nadání pro skrývání se ve tmě." },
-    { name: "Paměť rodu", desc: "Znalost historie místa starší než 12 let." },
-  ],
-  [Race.Trpaslik]: [
-    { name: "Noční oči", desc: "Schopnost vidět v úplné tmě." },
-    { name: "Síla přísahy", desc: "Zdroj navíc při plnění přísahy v ohrožení." },
-    { name: "Nezdolnost", desc: "Levnější hojení tělesných jizev." },
-    { name: "Játra ze žuly", desc: "Nadání čelit účinkům omamných látek a jedů." },
-    { name: "Pouto krve", desc: "Určitý trpaslík patří k příbuzným nebo má závazky." },
-  ],
-  [Race.Hobit]: [
-    { name: "Šestý smysl", desc: "Rozpozná hrozící nebezpečí." },
-    { name: "Takový prcek!", desc: "Zdroj navíc v boji s větším nepřítelem." },
-    { name: "Dobrá nálada", desc: "Levnější hojení duševních jizev." },
-    { name: "Tichošlápek", desc: "Nadání pro tichý pohyb naboso." },
-    { name: "Labužník", desc: "Vždy má u sebe něco pro zlepšení nálady." },
-  ],
-  [Race.Kroll]: [
-    { name: "Netopýří sluch", desc: "Orientace podle sluchu i v naprosté tmě." },
-    { name: "Zběsilost", desc: "Z každé tělesné jizvy získává postava vždy 1 zdroj navíc." },
-    { name: "Odznaky hrdinství", desc: "Nadání pro zastrašování." },
-    { name: "Zubří kůže", desc: "Pokožka dává slevu jako běžná zbroj." },
-    { name: "Kořeny magie", desc: "Hledání přirozeného magického zřídla." },
-  ]
-};
+import { RACIAL_ABILITIES_DATA } from '../data/racial-abilities';
 
 const BASE_CLASSES = ['Bojovník', 'Mastičkář', 'Zaříkávač', 'Lovec', 'Kejklíř'];
+
+interface Props {
+  onCreate: (newChar: Character) => void;
+  onCancel: () => void;
+}
 
 const CharacterCreator: React.FC<Props> = ({ onCreate, onCancel }) => {
   const [name, setName] = useState('');
@@ -123,14 +86,15 @@ const CharacterCreator: React.FC<Props> = ({ onCreate, onCancel }) => {
         <div>
           <label className="text-[10px] text-stone-500 uppercase font-bold tracking-[0.2em] mb-2 block">Zvláštní rasová schopnost</label>
           <div className="space-y-2">
-            {RACIAL_ABILITIES[race].map(a => (
+            {RACIAL_ABILITIES_DATA[race].map(a => (
               <button
                 key={a.name}
                 onClick={() => setAbility(a.name)}
-                className={`w-full text-left p-3 rounded-xl border transition-all ${ability === a.name ? 'bg-rose-900/10 border-rose-500/50' : 'bg-stone-900 border-stone-800'}`}
+                className={`w-full text-left p-4 rounded-xl border transition-all ${ability === a.name ? 'bg-rose-900/10 border-rose-500/50' : 'bg-stone-900 border-stone-800'}`}
               >
                 <div className="text-[11px] font-bold text-stone-300 uppercase mb-1">{a.name}</div>
-                <div className="text-[9px] text-stone-600 leading-tight italic">{a.desc}</div>
+                {a.flavor && <div className="text-[9px] text-stone-500 italic mb-1">"{a.flavor}"</div>}
+                <div className="text-[9px] text-stone-600 leading-tight">{a.description}</div>
               </button>
             ))}
           </div>
